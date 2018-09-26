@@ -39,9 +39,13 @@ final class Solution {
      * @param search value
      * @return count
      */
-    public static boolean search(int low, int high, int[] a, int search) {
+    public static boolean search(final int l, final int h, final int[] b, final int s) {
                     int middle = 0;
                     int count = 0;
+                    int low = l;
+                    int high = h;
+                    int[] a = b;
+                    int search = s;
                     while (low <= high) {
                     middle = (low + high) / 2;
                     if (search == a[middle]) {
