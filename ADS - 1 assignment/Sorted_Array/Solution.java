@@ -11,13 +11,17 @@ public class Solution {
 	String[] token = s.nextLine().split(",");
 	int[] a = new int[num1];
 	int[] b = new int[num2];
+	if(num1 > 0) {
 	for(int i = 0; i < token.length; i++) {
 		a[i] = Integer.parseInt(token[i]);
 	}
+}
+	if(num2 > 0) {
 	String[] tokens = s.nextLine().split(",");
 	for(int j = 0; j < tokens.length; j++) {
 		b[j] = Integer.parseInt(tokens[j]);
 	}
+}
 	int[] c = new int[total];
 	int i = 0;
 	int j = 0;
