@@ -39,7 +39,8 @@ final class Solution {
      * @param s value
      * @return count
      */
-    public static boolean search(final int l, final int h, final int[] b, final int s) {
+    public static boolean search(final int l, final int h,
+        final int[] b, final int s) {
                     int middle = 0;
                     int count = 0;
                     int low = l;
