@@ -33,10 +33,10 @@ final class Solution {
         System.out.println(count);
     }
     /**
-     * @param low value
-     * @param high value
-     * @param a value
-     * @param search value
+     * @param l value
+     * @param h value
+     * @param b value
+     * @param s value
      * @return count
      */
     public static boolean search(final int l, final int h, final int[] b, final int s) {
