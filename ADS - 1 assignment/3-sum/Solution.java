@@ -20,7 +20,7 @@ public class Solution {
 					if(-(a[i] + a[j]) == middle) {
 						count++;
 					}
-					else if(a[middle] > high) {
+					else if(a[middle] > -(a[i]+a[j])) {
 						high = middle - 1;
 					}
 					else {
