@@ -16,7 +16,7 @@ public class Solution {
 				int low = j+1;
 				int high = size - 1;
 				while(low <= high) {
-					middle = (low + high) / 2;
+				middle = (low + high) / 2;
 					if(-(a[i] + a[j]) == middle) {
 						count++;
 					}
