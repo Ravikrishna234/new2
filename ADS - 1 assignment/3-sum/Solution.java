@@ -8,27 +8,38 @@ public class Solution {
 		for(int i = 0; i < size; i++) {
 			a[i] = s.nextInt();
 		}
-		int count = 0;
 		Arrays.sort(a);
-		int middle = 0;
+		boolean c;
+		int count = 0;
 		for(int i = 0; i < size; i++) {
 			for(int j = i+1 ; j < size; j++) {
 				int low = j+1;
 				int high = size - 1;
-				while(low <= high) {
-				middle = (low + high) / 2;
-					if(-(a[i] + a[j]) == middle) {
-						count++;
+				c = search(low,high,a,-(a[i] + a[j]));
+				if(c) {
+					count++;
+				}
+
+			}
+		}
+		System.out.println(count);
+	}
+				public static boolean search(int low, int high,int[] a,int search)
+				 {
+				 	int middle = 0;
+				 	int count = 0;
+					while(low <= high) {
+					middle = (low + high) / 2;
+					if(search == a[middle]) {
+						return true;
 					}
-					else if(a[middle] > -(a[i]+a[j])) {
+					else if(a[middle] > search) {
 						high = middle - 1;
 					}
 					else {
 						low = middle + 1;
 					}
 				}
+				return false;
 			}
 		}
-		System.out.println(count);
-	}
-}
