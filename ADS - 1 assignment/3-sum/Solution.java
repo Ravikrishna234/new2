@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -8,16 +9,18 @@ public class Solution {
 			a[i] = s.nextInt();
 		}
 		int count = 0;
+		Arrays.sort(a);
+		int middle = 0;
 		for(int i = 0; i < size; i++) {
 			for(int j = i+1 ; j < size; j++) {
 				int low = j+1;
 				int high = size - 1;
 				while(low <= high) {
-					int middle = (low + high) / 2;
+					middle = (low + high) / 2;
 					if(-(a[i] + a[j]) == middle) {
 						count++;
 					}
-					else if(-(a[i] + a[j]) > high) {
+					else if(a[middle] > high) {
 						high = middle - 1;
 					}
 					else {
@@ -26,5 +29,6 @@ public class Solution {
 				}
 			}
 		}
+		System.out.println(count);
 	}
 }
