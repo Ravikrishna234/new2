@@ -51,6 +51,6 @@ public class Solution {
 	for(int l = 0; l < c.length - 1; l++) {
 		System.out.print(c[l] + ",");
 	 }
-	 System.out.print(c[c.length]);
+	 System.out.print(c[c.length - 1]);
 	}
 	}
