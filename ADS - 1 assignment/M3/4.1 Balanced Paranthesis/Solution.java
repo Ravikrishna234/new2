@@ -55,6 +55,9 @@ public class Solution {
 					char ch = s2.charAt(i);
 					if(ch == '(' || ch == '[' || ch == '{') {
 						stack.push(ch);
+					} else if (stack.isEmpty()) {
+						y = false;
+						return y;
 					}
 					else if(ch == ')') {
 						if(stack == null || stack.pop() != '(') {
