@@ -39,9 +39,9 @@ public class Solution {
 		while(j < num) {
 		boolean x = balanced(num,s);
 		if(x) {
-			System.out.println("Yes");
+			System.out.println("YES");
 		} else {
-			System.out.println("No");
+			System.out.println("NO");
 		}
 		j++;
 	}
