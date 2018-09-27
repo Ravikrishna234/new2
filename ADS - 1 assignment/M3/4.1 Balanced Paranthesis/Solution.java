@@ -74,7 +74,7 @@ final class Solution {
         int j = 0;
         int num = Integer.parseInt(s1);
         while (j < num) {
-        boolean x = balanced(num, s);
+        boolean x = balanced(s);
         if (x) {
             System.out.println("YES");
         } else {
@@ -89,7 +89,7 @@ final class Solution {
          * @param s value
          * @return y
          */
-public static boolean balanced(final int range, final Scanner s) {
+public static boolean balanced(final Scanner s) {
 boolean y = false;
 LinkedListStack stack = new LinkedListStack();
 String s2 = s.nextLine();
