@@ -50,6 +50,8 @@ public class Solution {
                         int size = dequeue.size();
                         System.out.println(size);
                         break;
+                default:
+                        break;
             }
             j++;
 
