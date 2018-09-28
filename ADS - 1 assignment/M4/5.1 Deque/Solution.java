@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**DEQUEUE.**/
-public class Solution {
+final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
@@ -30,7 +30,7 @@ public class Solution {
                     System.out.println(dequeue.display());
                     break;
                 case "popLeft":
-                    if(!dequeue.isempty()) {
+                    if (!dequeue.isempty()) {
                         dequeue.removeFirst();
                         System.out.println(dequeue.display());
                         } else {
@@ -39,7 +39,7 @@ public class Solution {
                                 //System.out.println(linklist);
                             break;
                 case "popRight":
-                        if(!dequeue.isempty()) {
+                        if (!dequeue.isempty()) {
                         dequeue.removeLast();
                         System.out.println(dequeue.display());
                             } else {
