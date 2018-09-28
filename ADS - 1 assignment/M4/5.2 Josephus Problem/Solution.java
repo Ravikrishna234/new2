@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**JOSEPHSON.**/
-public class Solution {
+final class Solution {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
