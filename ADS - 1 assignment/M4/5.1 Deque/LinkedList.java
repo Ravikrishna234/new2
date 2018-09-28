@@ -54,15 +54,13 @@ final class LinkedList {
     }
     public void Deleteback() {
         if (tail != null) {
-       Node temp = null;
-       Node popped = tail;
-       Node element = head;
-       while(element != tail) {
+       Node temp = head;
+       while(temp.next.next != null) {
+
             temp = temp.next;
         }
-
-        tail = temp;
         temp.next = null;
+        tail = temp;
         size--;
     }
     }
