@@ -44,6 +44,15 @@ final class LinkedList {
      * @details [long description]
      * @return value
      */
+     public char pop1() {
+        if (head == null) {
+
+        }
+        char item = head.value;
+        head = head.next;
+        return item;
+
+    }
     public void pop() {
         if (head == null) {
             return;
