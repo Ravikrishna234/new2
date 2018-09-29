@@ -7,6 +7,7 @@ final class LinkedList {
      */
     private Node head;
     private int size;
+    private Node tail;
     /**node.**/
     public class Node {
         /**
@@ -24,6 +25,7 @@ final class LinkedList {
      */
     LinkedList() {
         head = null;
+        tail = null;
         size = 0;
             }
     /**
@@ -59,12 +61,15 @@ final class LinkedList {
         head = new Node();
         head.value = value;
         head.next = null;
-    } else {
-        Node oldHead = head;
-        head = new Node();
-        head.value = value;
-        head.next = oldHead;
+        tail = head;
     }
+    else {
+            Node temp = tail;
+            tail = new Node();
+            tail.value = value;
+            tail.next = null;
+            temp.next = tail;
+        }
     size++;
     }
     public String displayAll(){
