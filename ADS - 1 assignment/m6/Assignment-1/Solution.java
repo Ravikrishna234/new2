@@ -1,11 +1,16 @@
+import java.util.Arrays;
 import java.util.Scanner;
 /**ADD.**/
-class AddLargeNumbers {
+final class AddLargeNumbers {
     /**
      * @brief [brief description]
      * @details [long description]
      */
     private AddLargeNumbers() { }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     */
     private static LinkedList link = new LinkedList();
     /**
      * @param number value
@@ -41,9 +46,7 @@ class AddLargeNumbers {
         while (!list1.isEmpty()) {
             char c = list1.pop1();
 
-            s += c;
-
-
+            s += c + " ";
         }
         String s1 = "";
         while (!list2.isEmpty()) {
@@ -51,7 +54,19 @@ class AddLargeNumbers {
 
             s1 += c1;
         }
-        System.out.println(s);
+        String[] tokens = s.split(" ");
+        System.out.println(Arrays.toString(tokens));
+        int len = s.length();
+        //int result = Integer.parseInt(s);
+        String[] token = new String[len];
+        int j = 0;
+        for (int i = 0; i < len; i++) {
+                //token[i] = tokens[i] + tokens[len];
+                i++;
+                len--;
+                j++;
+        }
+        //System.out.println(Arrays.toString(token));
         return list1;
 }
 }
@@ -103,3 +118,4 @@ final class Solution {
     }
 
 }
+
