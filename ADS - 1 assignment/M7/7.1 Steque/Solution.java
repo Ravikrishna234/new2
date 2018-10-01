@@ -23,6 +23,9 @@ public class Solution {
                                     System.out.println(stq.displayAll());
                                     break;
                 }
+                if(tokens[0].equals("")){
+                    break;
+                }
 
             }
             i++;
