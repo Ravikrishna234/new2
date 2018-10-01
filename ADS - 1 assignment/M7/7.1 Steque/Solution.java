@@ -14,7 +14,7 @@ public class Solution {
                                   break;
                     case "pop" :stq.pop();
                                 if(stq.isEmpty()) {
-                                System.out.println("Steque is empty");
+                                System.out.println("Steque is empty.");
                                 } else {
                                  System.out.println(stq.displayAll());
                              }
