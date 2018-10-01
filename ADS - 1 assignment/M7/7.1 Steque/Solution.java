@@ -8,6 +8,7 @@ final class Solution {
     private Solution() { }
     /**
      * @param args value
+     * Time complexity is N^2 as there are two loops
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
