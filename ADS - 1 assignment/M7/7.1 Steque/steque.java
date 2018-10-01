@@ -36,7 +36,7 @@ final class steque {
      * @return value
      */
     public boolean isEmpty() {
-        if (head == null) {
+        if (tail == null || head == null) {
             return true;
         }
         return false;

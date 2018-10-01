@@ -12,10 +12,10 @@ public class Solution {
                     case "push" : stq.push(Integer.parseInt(tokens[1]));
                                   System.out.println(stq.displayAll());
                                   break;
-                    case "pop" :if(stq.isEmpty()) {
+                    case "pop" :stq.pop();
+                                if(stq.isEmpty()) {
                                 System.out.println("Steque is empty");
                                 } else {
-                                stq.pop();
                                  System.out.println(stq.displayAll());
                              }
                                  break;
