@@ -44,7 +44,7 @@ final class steque {
     /**
      * @brief [brief description]
      * @details [long description]
-     * @return value
+     * Time complexity is 1 as it pop only one element.
      */
     public void pop() {
         if (head!=null) {
@@ -66,6 +66,7 @@ final class steque {
     // }
     /**
      * @param value value
+     * Time complexity is 1 as it adds one element.
      */
     public void push(final int value) {
         if(head == null) {
@@ -82,6 +83,10 @@ final class steque {
     }
     size++;
     }
+    /**
+     * @param value value
+     * Time complexity is 1 as it adds one element.
+     */
 public void Insertback(final int value) {
         if(tail == null || head == null) {
         //Node temp = tail;
@@ -100,9 +105,17 @@ public void Insertback(final int value) {
 
         size++;
     }
+    /**
+     * @param value value
+     * Time complexity is 1 as it adds one element.
+     */
     public int getsize() {
         return size;
     }
+    /**
+     * @param value value
+     * Time complexity is 1 as it adds one element.
+     */
     public String displayAll() {
         if(size!=0) {
             String s = "";
