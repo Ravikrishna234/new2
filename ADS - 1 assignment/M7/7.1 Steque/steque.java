@@ -83,7 +83,7 @@ final class steque {
     size++;
     }
 public void Insertback(final int value) {
-        if(tail == null) {
+        if(tail == null || head == null) {
         //Node temp = tail;
             tail = new Node();
             tail.value = value;
