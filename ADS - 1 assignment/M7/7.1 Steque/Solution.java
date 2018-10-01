@@ -24,6 +24,7 @@ public class Solution {
                                     break;
                 }
                 if(tokens[0].equals("")){
+                    System.out.println();
                     break;
                 }
 
