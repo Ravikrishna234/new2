@@ -32,6 +32,9 @@ class Match {
 		}
 	}
 }
+	/**
+	 * time complexity is O(1)
+	 */
 	public void exchange(Team[] team,int i,int loc) {
 	Team temp = team[loc];
 	team[loc] = team[i];
