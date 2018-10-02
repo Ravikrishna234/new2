@@ -21,6 +21,9 @@ class Team {
 	public int getdraws() {
 		return this.draw;
 	}
+	/**
+	 * time complexity is O(1)
+	 */
 public int compareTo(Team that) {
 		if(this.getwins() > that.getwins()) {
 			return 1;

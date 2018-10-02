@@ -8,6 +8,7 @@ final class Solution {
     private Solution() { }
     /**
      * @param args value.
+     * time coplexity is O(N)
      */
     public static void main(final String[] args) {
         Match m = new Match();
@@ -16,8 +17,8 @@ final class Solution {
         Scanner s = new Scanner(System.in);
         while (s.hasNextLine()) {
             String[] tokens = s.nextLine().split(",");
-            Team t = new Team(tokens[value1],tokens[value],
-                tokens[value * 2],tokens[value * 3]);
+            Team t = new Team(tokens[value1], tokens[value],
+                tokens[value + value], tokens[value + value + value]);
 
             m.addteam(t);
         }
