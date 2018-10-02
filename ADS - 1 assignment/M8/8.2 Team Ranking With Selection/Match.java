@@ -27,7 +27,7 @@ class Match {
 	 */
 	public void insertionsort() {
 		for(int i = 1; i < size - 1; i++) {
-			for(int j = i;j > 0 && (team[j].compareTo(team[j - 1])) > 0;j--) {
+			for(int j = i;j > 0 && (team[j].compareTo(team[j - 1])) >= 0;j--) {
 			exchange(team,j,j-1);
 		}
 	}
