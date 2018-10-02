@@ -26,7 +26,7 @@ class Match {
 	 * time complexity is O(N^2)
 	 */
 	public void insertionsort() {
-		for(int i = 1; i < size - 1; i++) {
+		for(int i = 1; i < size; i++) {
 			for(int j = i;j > 0 && team[j].compareTo(team[j - 1]) > -1;j--) {
 			exchange(team,j,j-1);
 		}
