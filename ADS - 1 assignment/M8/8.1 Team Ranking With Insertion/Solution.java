@@ -50,12 +50,10 @@ class Solution {
 	public static void main(String[] args) {
 		Match m = new Match();
 		Scanner s = new Scanner(System.in);
-		int i = 0;
-		while(i < 7) {
+		while(s.hasNextLine()) {
 			String[] tokens = s.nextLine().split(",");
 			Team t = new Team(tokens[0],tokens[1],tokens[2],tokens[3]);
 			m.addteam(t);
-			i++;
 		}
 		m.selectionsort();
 		System.out.println(m);
