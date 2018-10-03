@@ -1,17 +1,14 @@
 import java.util.Scanner;
 class Solution {
 	public static void main(String[] args) {
-		MergeX m = new MergeX();
+		Merge m = new Merge();
 		Scanner s = new Scanner(System.in);
 		String[] tokens = new String[50];
-		int i = 0;
-		while (i < 3) {
+		while (s.hasNextLine()) {
 			 tokens = s.nextLine().split(",");
-			 m.sort(tokens,tokens.length);
-			System.out.println(m.toString(tokens));
+			 m.sort(tokens);
+			System.out.println(m.show(tokens));
 			System.out.println();
-
-			i++;
 		}
 	}
 }
