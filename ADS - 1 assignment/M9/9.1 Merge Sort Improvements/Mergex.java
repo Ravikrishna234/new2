@@ -43,13 +43,13 @@ class Merge {
         sort(newarray, array, lo, mid);
         sort(newarray, array, mid+1, hi);
 
-        if (!less(array[mid+1], array[mid])) {
-           for (int i = lo; i <= hi; i++) {
-            newarray[i] = array[i];
-            }
-            System.out.println("Array is already sorted. So, skipped the call to merge...");
-           return;
-        }
+        // if (!less(array[mid+1], array[mid])) {
+        //    for (int i = lo; i <= hi; i++) {
+        //     newarray[i] = array[i];
+        //     }
+        //     System.out.println("Array is already sorted. So, skipped the call to merge...");
+        //    return;
+        // }
         merge(array, newarray, lo, mid, hi);
     }
     /**
