@@ -44,7 +44,7 @@ class Merge {
             newarray[i] = array[i];
             }
             System.out.println("Array is already sorted. So, skipped the call to merge...");
-           return;
+            return;
         }
         merge(array, newarray, lo, mid, hi);
     }
