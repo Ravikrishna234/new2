@@ -1,11 +1,20 @@
 import java.util.Scanner;
-class Solution {
-	public static void main(String[] args) {
+/**RECURSIONSTACK.**/
+final class Solution {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @param args value
+	 */
+	public static void main(final String[] args) {
 		recursion rec = new recursion();
 		Scanner s = new Scanner(System.in);
-		while(s.hasNextLine()) {
+		while (s.hasNextLine()) {
 		String[] tokens = s.nextLine().split(" ");
-		switch(tokens[0]) {
+		switch (tokens[0]) {
 				case "insertAt" : int a = Integer.parseInt(tokens[1]);
 								  // System.out.println(rec.getsize());
 								  if(a < 0) {
@@ -24,6 +33,8 @@ class Solution {
 								  System.out.println(rec.displayAll());
 								}
 								  break;
+				default:
+						break;
 		}
 	}
 	}
