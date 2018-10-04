@@ -17,7 +17,7 @@ class Solution {
 								  System.out.println(rec.displayAll());
 								}
 								  break;
-				case "reverse":	  if(rec.isEmpty()) {
+				case "reverse":	  if(rec.getsize() == 0) {
 									System.out.println("No elements to reverse.");
 									} else {
 								  rec.reverse();
