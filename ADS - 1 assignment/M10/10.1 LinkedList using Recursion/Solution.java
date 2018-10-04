@@ -17,8 +17,12 @@ class Solution {
 								  System.out.println(rec.displayAll());
 								}
 								  break;
-				case "reverse":	  rec.reverse();
+				case "reverse":	  if(rec.isEmpty()) {
+									System.out.println("No elements to reverse.");
+									} else {
+								  rec.reverse();
 								  System.out.println(rec.displayAll());
+								}
 								  break;
 		}
 	}
