@@ -35,7 +35,7 @@ final class recursion {
     /**
      * @brief [brief description]
      * @details [long description]
-     * @return value
+     * Time complexity is O(1).
      */
     public boolean isEmpty() {
         if (tail == null || head == null) {
@@ -66,6 +66,9 @@ final class recursion {
     //     size--;
     // }
     // }
+    /**
+     * Time complexity is O(1)
+     */
     public void push(final int value) {
     //     if(head == null) {
     //     //Node oldHead = head;
@@ -98,6 +101,9 @@ final class recursion {
         insertAt(head,position,value);
 
     }
+    /**
+     * Time complexity is O(N)
+     */
     public void insertAt(Node head,int position,int value) {
         // System.out.println(count);
         if(position == 0) {
@@ -131,10 +137,6 @@ final class recursion {
     //     head.next = oldHead;
     // }
     }
-    /**
-     * @param value value
-     * Time complexity is 1 as it adds one element.
-     */
 
     /**
      * @param value value
@@ -143,6 +145,9 @@ final class recursion {
     public void reverse() {
         head = recursive(head);
     }
+    /**
+     * Time complexity is O(N)
+     */
     public Node recursive(Node head) {
         if(head == null || head.next == null) {
             return head;
@@ -152,6 +157,9 @@ final class recursion {
         head.next = null;
         return p;
     }
+    /**
+     * Time complexity is O(1)
+     */
     public int getsize() {
         return size;
     }
