@@ -1,16 +1,52 @@
 /**STUDENT.**/
 class student {
+	/**
+	 * variable.
+	 */
 	private String name;
+	/**
+	 * variable.
+	 */
 	private String dob;
+	/**
+	 * variable.
+	 */
 	private int sub1;
+	/**
+	 * variable.
+	 */
 	private int sub2;
+	/**
+	 * variable.
+	 */
 	private int sub3;
+	/**
+	 * variable.
+	 */
 	private int total;
+	/**
+	 * variable.
+	 */
 	private String reservation;
+	/**
+	 * variable.
+	 */
 	private int vacancy;
+	/**
+	 * variable.
+	 */
 	private int unreserved;
+	/**
+	 * variable.
+	 */
 	private int bc;
+	/**
+	 * variable.
+	 */
 	private int sc;
+	/**
+	 * variable.
+	 */
 	private int st;
 	student (int vacancy,int unre,int bc,int sc,int st) {
 		this.vacancy = vacancy;
@@ -49,6 +85,16 @@ class student {
 	public int getunreserve() {
 		return this.unreserved;
 	}
+	int getage() {
+        int age = 0;
+        final int year = 2018, days = 365, month = 30, ten = 10;
+        String[] token = this.getdob().split("-");
+        age += (year - Integer.parseInt(token[2])) * days;
+        age += (ten - Integer.parseInt(token[1])) * month;
+        age += Integer.parseInt(token[0]);
+
+        return age;
+    }
 	//Date start = new SimpleDateFormat("yyyy/MM/dd", Locale.ENGLISH)
                     //.parse(startDate);
 	student(String name,String dob,int sub1,int sub2,int sub3,int total,String res) {
@@ -107,12 +153,14 @@ class student {
 	 * time complexity is 1
 	 */
 	  int compareTo(student that) {
-		if(this.gettotal() > that.gettotal()) {
+		if (this.gettotal() > that.gettotal()) {
 			return 1;
 		}
-		else if(this.gettotal() < that.gettotal()) {
+		else if (this.gettotal() < that.gettotal()) {
 			return -1;
-		 }
+		 } else {
+		return 0;
+	}
 		// else {
 		// if(this.getlosse() < that.getlosse()) {
 		// 	return 1;
@@ -125,9 +173,7 @@ class student {
 		// } else if(this.getdraws() > that.getdraws()) {
 		// 	return 1;
 		// }
-			else {
-		return 0;
-	}
+
 }
 	/**
 	 * time complexity is 1
