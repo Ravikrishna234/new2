@@ -1,6 +1,5 @@
-import java.util.Date;
-import java.util.Locale;
-class student{
+/**STUDENT.**/
+class student {
 	String name;
 	String dob;
 	int sub1;
@@ -13,25 +12,40 @@ class student{
 	int bc;
 	int sc;
 	int st;
-	student(int vacancy,int unre,int bc,int sc,int st) {
+	student (int vacancy,int unre,int bc,int sc,int st) {
 		this.vacancy = vacancy;
 		this.unreserved = unre;
 		this.bc = bc;
 		this.sc = sc;
 		this.st = st;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int getvacancy() {
 		return this.vacancy;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int getst() {
 		return this.st;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int getsc() {
 		return this.sc;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int getbc() {
 		return this.bc;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int getunreserve() {
 		return this.unreserved;
 	}
@@ -46,28 +60,53 @@ class student{
 		this.total = total;
 		this.reservation = res;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public String getname() {
 		return this.name;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public String getdob() {
 		return this.dob;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int get1() {
 		return this.sub1;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int get2() {
 		return this.sub2;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public int get3() {
 		return this.sub3;
 	}
+	/**
+	 * time complexity is 1
+	 */
+
 	public int gettotal() {
 		return this.total;
 	}
+	/**
+	 * time complexity is 1
+	 */
 	public String getreserve() {
 		return this.reservation;
 	}
-	public int compareTo(student that) {
+	/**
+	 * time complexity is 1
+	 */
+	  int compareTo(student that) {
 		if(this.gettotal() > that.gettotal()) {
 			return 1;
 		}
@@ -90,24 +129,27 @@ class student{
 		return 0;
 	}
 }
+	/**
+	 * time complexity is 1
+	 */
 	public int compare(student that) {
-		if(this.gettotal() > that.gettotal()) {
+		if (this.gettotal() > that.gettotal()) {
 			return 1;
 		}
-		 else if(this.gettotal() < that.gettotal()) {
+		 else if (this.gettotal() < that.gettotal()) {
 		 	return -1;
 		 }
-		 else if(this.get3() > that.get3()) {
+		 else if (this.get3() > that.get3()) {
 		 	return 1;
-		 } else if(this.get3() < that.get3()) {
+		 } else if (this.get3() < that.get3()) {
 		 	return -1;
-		 } else if(this.get2() > that.get2()) {
+		 } else if (this.get2() > that.get2()) {
 		 	return 1;
-		 } else if(this.get2() < that.get2()) {
+		 } else if (this.get2() < that.get2()) {
 		 	return - 1;
-		 } else if(this.getdob().compareTo(that.getdob()) > 0) {
+		 } else if (this.getdob().compareTo(that.getdob()) > 0) {
 		 	return 1;
-		 } else if(this.getdob().compareTo(that.getdob()) < 0) {
+		 } else if (this.getdob().compareTo(that.getdob()) < 0) {
 		 	return -1;
 		 }
 			else {
@@ -128,10 +170,10 @@ class store {
 	}
 	public void selectionsort() {
 		int loc;
-		for(int i = 0; i < size - 1; i++) {
+		for (int i = 0; i < size - 1; i++) {
 			loc = i;
-			for(int j = i + 1; j < size; j++) {
-				if((student[j].compareTo(student[loc])) >= 0) {
+			for (int j = i + 1; j < size; j++) {
+				if ((student[j].compareTo(student[loc])) >= 0) {
 					loc = j;
 				}
 			}
@@ -148,10 +190,10 @@ class store {
 			}
 	public void selectionsort1() {
 		int loc;
-		for(int i = 0; i < size - 1; i++) {
+		for (int i = 0; i < size - 1; i++) {
 			loc = i;
-			for(int j = i + 1; j < size; j++) {
-				if((student[j].compare(student[loc])) >= 0) {
+			for (int j = i + 1; j < size; j++) {
+				if ((student[j].compare(student[loc])) >= 0) {
 					loc = j;
 				}
 			}
@@ -168,7 +210,7 @@ class store {
 			}
 	public String toString() {
 		String s = "";
-		for(int i = 0; i < size - 1; i++) {
+		for (int i = 0; i < size - 1; i++) {
 			s += student[i].getname() + "," + student[i].gettotal()
 			+ "," +student[i].getreserve();
 			s += "\n";
@@ -181,7 +223,7 @@ class store {
 	}
 	public String toString1(int vacancy) {
 		String s = "";
-		for(int i = 0; i < vacancy - 1; i++) {
+		for (int i = 0; i < vacancy - 1; i++) {
 			s += student[i].getname() + "," + student[i].gettotal()
 			+ "," +student[i].getreserve();
 			s += "\n";
