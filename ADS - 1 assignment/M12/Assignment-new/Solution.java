@@ -22,10 +22,15 @@ final class Solution {
 		student stud = new student(vacancy, uvacancy, bc, sc, st);
 		int i = 0;
 		while (i < n) {
+			final int value = 0;
+			final int value1 = 1;
+			final int value5 = 5;
 			String[] tokens = s.nextLine().split(",");
-			stud = new student(tokens[0], tokens[1], Integer.parseInt(tokens[2]),
-				Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]),
-				Integer.parseInt(tokens[5]), tokens[6]);
+			stud = new student(tokens[value], tokens[value1 + value1],
+				Integer.parseInt(tokens[value1 + value1]),
+				Integer.parseInt(tokens[value5 - value1 - value1]),
+				Integer.parseInt(tokens[value5 - value1]),
+				Integer.parseInt(tokens[value5]), tokens[value5 + 1]);
 			sto.addStudent(stud);
 			i++;
 		}
