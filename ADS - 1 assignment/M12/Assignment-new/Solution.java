@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**STUDENT.**/
-class Solution {
+final class Solution {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
@@ -10,7 +10,7 @@ class Solution {
 	 * @param args value
 	 * Time complexity is O(N).
 	 */
-	public static void main(String[] args){
+	public static void main(final String[] args){
 		Scanner s = new Scanner(System.in);
 		int n = Integer.parseInt(s.nextLine());
 		int vacancy = Integer.parseInt(s.nextLine());
@@ -23,9 +23,9 @@ class Solution {
 		int i = 0;
 		while (i < n) {
 			String[] tokens = s.nextLine().split(",");
-			stud = new student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
-				Integer.parseInt(tokens[3]),Integer.parseInt(tokens[4]),
-				Integer.parseInt(tokens[5]),tokens[6]);
+			stud = new student(tokens[0], tokens[1], Integer.parseInt(tokens[2]),
+				Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]),
+				Integer.parseInt(tokens[5]), tokens[6]);
 			sto.addStudent(stud);
 			i++;
 		}
