@@ -1,17 +1,17 @@
 /**STUDENT.**/
 class student {
-	String name;
-	String dob;
-	int sub1;
-	int sub2;
-	int sub3;
-	int total;
-	String reservation;
-	int vacancy;
-	int unreserved;
-	int bc;
-	int sc;
-	int st;
+	private String name;
+	private String dob;
+	private int sub1;
+	private int sub2;
+	private int sub3;
+	private int total;
+	private String reservation;
+	private int vacancy;
+	private int unreserved;
+	private int bc;
+	private int sc;
+	private int st;
 	student (int vacancy,int unre,int bc,int sc,int st) {
 		this.vacancy = vacancy;
 		this.unreserved = unre;
@@ -177,7 +177,7 @@ class store {
 					loc = j;
 				}
 			}
-			exchange(student,i,loc);
+			exchange(student, i, loc);
 		}
 	}
 	/**
