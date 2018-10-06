@@ -261,26 +261,26 @@ final class Solution {
                 }
             }
         }
-        if (sc > 0) {
-            for (int k = open; k < n; k++) {
-            if (students[k].getcategory().equals("Open") && sc > 0) {
-                    if (!contains(values, k)) {
-                        values[i++] = k;
-                        sc--;
-                    }
-                }
-            }
-        }
-        if (st > 0) {
-            for (int k = open; k < n; k++) {
-            if (students[k].getcategory().equals("Open") && st > 0) {
-                    if (!contains(values, k)) {
-                        values[i++] = k;
-                        st--;
-                    }
-                }
-            }
-        }
+        // if (sc > 0) {
+        //     for (int k = open; k < n; k++) {
+        //     if (students[k].getcategory().equals("Open") && sc > 0) {
+        //             if (!contains(values, k)) {
+        //                 values[i++] = k;
+        //                 sc--;
+        //             }
+        //         }
+        //     }
+        // }
+        // if (st > 0) {
+        //     for (int k = open; k < n; k++) {
+        //     if (students[k].getcategory().equals("Open") && st > 0) {
+        //             if (!contains(values, k)) {
+        //                 values[i++] = k;
+        //                 st--;
+        //             }
+        //         }
+        //     }
+        // }
         Arrays.sort(values);
         for (int k = 0; k < values.length; k++) {
             System.out.println(students[values[k]].print());
