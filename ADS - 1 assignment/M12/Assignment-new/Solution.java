@@ -19,7 +19,8 @@ final class Solution {
 		int sc = Integer.parseInt(s.nextLine());
 		int st = Integer.parseInt(s.nextLine());
 		store sto = new store();
-		student stud = new student(vacancy, uvacancy, bc, sc, st);
+		student stud = new student(vacancy,
+			uvacancy, bc, sc, st);
 		int i = 0;
 		while (i < n) {
 			final int value = 0;
