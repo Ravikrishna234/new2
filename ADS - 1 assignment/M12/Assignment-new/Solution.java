@@ -27,10 +27,10 @@ final class Solution {
 			final int value5 = 5;
 			String[] tokens = s.nextLine().split(",");
 			stud = new student(tokens[value], tokens[value1 + value1],
-				Integer.parseInt(tokens[value1 + value1]),
-				Integer.parseInt(tokens[value5 - value1 - value1]),
-				Integer.parseInt(tokens[value5 - value1]),
-				Integer.parseInt(tokens[value5]), tokens[value5 + 1]);
+		Integer.parseInt(tokens[value1 + value1]),
+		Integer.parseInt(tokens[value5 - value1 - value1]),
+		Integer.parseInt(tokens[value5 - value1]),
+		Integer.parseInt(tokens[value5]), tokens[value5 + 1]);
 			sto.addStudent(stud);
 			i++;
 		}
