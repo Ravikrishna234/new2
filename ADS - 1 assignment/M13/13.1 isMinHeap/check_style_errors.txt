@@ -1,0 +1,11 @@
+Starting audit...
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:9:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M13\13.1 isMinHeap\Solution.java:11:27: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 8 errors.
