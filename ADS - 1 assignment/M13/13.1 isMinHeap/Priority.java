@@ -43,7 +43,7 @@ class Priority<E extends Comparable<E>> {
   //       return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
   //   }
     public boolean greater(int i, int j) {
-    	return array[i].compareTo(array[j]) > 0;
+    	return array[i].compareTo(array[j]) < 0;
     }
     // public int compareTo(E that) {
     // 	if(this.compareTo(that) > 0) {
