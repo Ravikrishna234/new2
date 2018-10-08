@@ -1,12 +1,21 @@
 import java.util.Scanner;
+/**MINIMUMHEAP.**/
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @param args [description]
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		String s1 = s.nextLine();
 		int n = Integer.parseInt(s.nextLine());
 		switch(s1) {
 			case "String":
-				while(n > 0) {
+				while (n > 0) {
 					String[] tokens = s.nextLine().split(",");
 					Priority<String> m = new Priority<String>(tokens);
 					System.out.println(m.isminHeap());
@@ -14,10 +23,10 @@ class Solution {
 				}
 				break;
 			case "Integer":
-				while(n > 0) {
+				while (n > 0) {
 					String[] tokens = s.nextLine().split(",");
                		Integer[] intTokens = new Integer[tokens.length];
-               		for(int i = 0; i < tokens.length;i++) {
+               		for (int i = 0; i < tokens.length;i++) {
                			intTokens[i] = Integer.parseInt(tokens[i]);
                		}
                		Priority<Integer> m = new Priority<Integer>(intTokens);
@@ -26,10 +35,10 @@ class Solution {
 				}
 				break;
 			case "Double":
-				while(n > 0) {
+				while (n > 0) {
 				String[] tokens = s.nextLine().split(",");
                		Double[] idTokens = new Double[tokens.length];
-               		for(int i = 0; i < tokens.length;i++) {
+               		for (int i = 0; i < tokens.length;i++) {
                			idTokens[i] = Double.parseDouble(tokens[i]);
                		}
                		Priority<Double> m = new Priority<Double>(idTokens);
@@ -38,14 +47,14 @@ class Solution {
 				}
 		break;
 		case "Float":
-			while(n > 0) {
+			while (n > 0) {
 			String[] tokens = s.nextLine().split(",");
 			if(tokens[0].equals("")) {
 				System.out.println("false");
 				break;
 			} else {
 				Float[] ftokens = new Float[tokens.length];
-				for(int i = 0; i < tokens.length; i++) {
+				for (int i = 0; i < tokens.length; i++) {
 					ftokens[i] = Float.parseFloat(tokens[i]);
 				}
 				Priority<Float> m = new Priority<Float>(ftokens);
