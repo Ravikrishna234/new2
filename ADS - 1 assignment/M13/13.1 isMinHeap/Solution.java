@@ -42,6 +42,7 @@ class Solution {
 			String[] tokens = s.nextLine().split(",");
 			if(tokens[0].equals("")) {
 				System.out.println("false");
+				break;
 			} else {
 				Float[] ftokens = new Float[tokens.length];
 				for(int i = 0; i < tokens.length; i++) {
