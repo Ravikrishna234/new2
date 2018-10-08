@@ -27,7 +27,7 @@ final class Solution {
             while (n > 0) {
             String[] tokens = s.nextLine().split(",");
             Integer[] intTokens = new Integer[tokens.length];
-            for (int i = 0; i < tokens.length;i++) {
+            for (int i = 0; i < tokens.length; i++) {
                 intTokens[i] = Integer.parseInt(tokens[i]);
                }
             Priority<Integer> m = new Priority<Integer>(intTokens);
@@ -39,7 +39,7 @@ final class Solution {
             while (n > 0) {
             String[] tokens = s.nextLine().split(",");
             Double[] idTokens = new Double[tokens.length];
-            for (int i = 0; i < tokens.length;i++) {
+            for (int i = 0; i < tokens.length; i++) {
                 idTokens[i] = Double.parseDouble(tokens[i]);
             }
             Priority<Double> m = new Priority<Double>(idTokens);
