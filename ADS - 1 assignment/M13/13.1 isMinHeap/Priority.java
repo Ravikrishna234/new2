@@ -6,11 +6,14 @@ class Priority<E extends Comparable<E>> {
 		this.array = a;
 	}
 	public boolean isminHeap() {
-		if(isMinHeap(1)) {
-			return true;
-		  } else {
-		return false;
-	}
+		for(int i = 1; i < array.length; i++) {
+			if(2 * i < array.length && greater(2 * i,i)) {
+				return false;
+			} if((2 * i) + 1 < array.length && greater(2 * i+1,i)) {
+				return false;
+			}
+		}
+		return true;
 	}
 	// public void addAll(E[] arr) {
 	// 	for(int i = 0; i < arr.length; i++) {
@@ -23,30 +26,30 @@ class Priority<E extends Comparable<E>> {
 	// 	}
 	// 	array[++size] = t;
 	// }
-	public void resize() {
-		array = Arrays.copyOf(array,array.length * 2);
-	}
-	 public boolean isMinHeap(int k) {
-        if (k < size) {
-        	return false;
-        }
+	// public void resize() {
+	// 	array = Arrays.copyOf(array,array.length * 2);
+	// }
+	 // public boolean isMinHeap(int k) {
+  //       if (k < size) {
+  //       	return false;
+  //       }
 
-        if (2 * k <= size && greater(k, 2 * k)) {
-        	return false;
-        }
-        if (2 * k + 1 <= size && greater(k, 2 * k+1)) {
-        	return false;
-        }
-        return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
-    }
+  //       if (2 * k <= size && greater(k, 2 * k)) {
+  //       	return false;
+  //       }
+  //       if (2 * k + 1 <= size && greater(k, 2 * k+1)) {
+  //       	return false;
+  //       }
+  //       return isMinHeap(2 * k) && isMinHeap(2 * k + 1);
+  //   }
     public boolean greater(int i, int j) {
-    	return (array[i].compareTo(array[j])) > 0;
+    	return array[i].compareTo(array[j]) > 0;
     }
-    public int compareTo(E that) {
-    	if(this.compareTo(that) > 0) {
-    		return 1;
-    	} else if(this.compareTo(that) < 0)
-    return -1;
-    	return 0;
-    }
+    // public int compareTo(E that) {
+    // 	if(this.compareTo(that) > 0) {
+    // 		return 1;
+    // 	} else if(this.compareTo(that) < 0)
+    // return -1;
+    // 	return 0;
+    // }
 }
