@@ -52,6 +52,7 @@ class student {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
+	 * time complexity is O(1).
 	 */
 	public int getage() {
         int age = 0;
@@ -156,6 +157,7 @@ class store {
 	}
 	/**
 	 * @param student value
+	 * time complexity is O(1).
 	 */
 	public void addStudent(final student s) {
 		student[size++] = s;
@@ -163,6 +165,7 @@ class store {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
+	 * time complexity is O(N^2).
 	 */
 	public void sort() {
         int n = size;
@@ -178,6 +181,7 @@ class store {
      * @param pq student
      * @param c value
      * @param n value
+     * time complexity is O(N).
      */
 	 public void sink(final student[] pq, final int c, final int n) {
 	 	int k = c;
@@ -194,6 +198,8 @@ class store {
      * @param i value
      * @param j value
      * @return value
+     * time complexity is O(1).
+     *
      */
     public boolean less(final student[] student, final int i, final int j) {
         return student[i - 1].compare(student[j - 1]) >= 0;
@@ -202,8 +208,9 @@ class store {
      * @param team student
      * @param i value
      * @param loc value
+     * time complexity is O(1).
      */
-    public void exch(student[] team, int i, int loc) {
+    public void exch(final student[] team, final int i, final int loc) {
         student swap = team[i - 1];
         team[i - 1] = team[loc - 1];
         team[loc - 1] = swap;
@@ -211,6 +218,7 @@ class store {
     /**
      * @param arr value
      * @param val value
+     * time complexity is O(N).
      * @return value
      */
     public boolean contains(final int[] arr, final int val) {
@@ -222,35 +230,49 @@ class store {
         return false;
     }
 	/**
-	 * time complexity is O(1).
+	 * time complexity is O(N).
 	 */
 	public String toString() {
 		String s = "";
 		for (int i = 0; i < size - 1; i++) {
 			s += student[i].getname() + "," + student[i].gettotal()
-			+ "," +student[i].getreserve();
+			+ "," + student[i].getreserve();
 			s += "\n";
 		}
 		s += student[size - 1].getname() + "," + student[size - 1].gettotal()
-		+ "," +student[size - 1].getreserve();
+		+ "," + student[size - 1].getreserve();
 			return s;
-
-
 	}
-	public String toString1(int vacancy) {
+	/**
+	 * time complexity is O(1).
+	 * @param vacancy value
+	 * @return value
+	 */
+	public String toString1(final int vacancy) {
 		String s = "";
 		for (int i = 0; i < vacancy - 1; i++) {
 			s += student[i].getname() + "," + student[i].gettotal()
-			+ "," +student[i].getreserve();
+			+ "," + student[i].getreserve();
 			s += "\n";
 		}
 		s += student[vacancy - 1].getname() + "," + student[vacancy - 1].gettotal()
-		+ "," +student[vacancy - 1].getreserve();
+		+ "," + student[vacancy - 1].getreserve();
 			return s;
-
-
 	}
-	public void getr(int open,int n,int bc,int sc,int st) {
+	/**
+	 * time complexity is O(1).
+	 * @param open [description]
+	 * @param n value
+	 * @param bc value
+	 * @param sc value
+	 * @param st value
+	 */
+	public void getr(final int c,final int c1, final int c2, final int c3, final int c4) {
+		int open = c;
+		int n = c1;
+		int bc = c2;
+		int sc = c3;
+		int st = c4;
 		int[] array = new int[bc + sc + st];
         int i = 0;
 		for (int k = open;k < n; k++) {
