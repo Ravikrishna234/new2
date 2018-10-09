@@ -247,55 +247,55 @@ class store {
 
 	}
 	public void getr(int open,int n,int bc,int sc,int st) {
-		int[] values = new int[bc + sc + st];
+		int[] array = new int[bc + sc + st];
         int i = 0;
 		for(int k = open;k < n; k++) {
 			if(student[k].getreserve().equals("BC") && bc > 0) {
-				values[i++] = k;
+				array[i++] = k;
 				bc--;
 			}
 			else if(student[k].getreserve().equals("SC") && sc > 0) {
-				values[i++] = k;
+				array[i++] = k;
 				sc--;
 			}
 			else if(student[k].getreserve().equals("ST") && st > 0) {
-				values[i++] = k;
+				array[i++] = k;
 				st--;
 			}
 		}
-		// if (bc > 0) {
-  //           for (int k = open; k < n; k++) {
-  //           if (student[k].getreserve().equals("Open") && bc > 0) {
-  //                   if (!contains(values, k)) {
-  //                       values[i++] = k;
-  //                       bc--;
-  //                   }
-  //               }
-  //           }
-  //       }
-  //       if (sc > 0) {
-  //           for (int k = open; k < n; k++) {
-  //           if (student[k].getreserve().equals("Open") && sc > 0) {
-  //                   if (!contains(values, k)) {
-  //                       values[i++] = k;
-  //                       sc--;
-  //                   }
-  //               }
-  //           }
-  //       }
-  //       if (st > 0) {
-  //           for (int k = open; k < n; k++) {
-  //           if (student[k].getreserve().equals("Open") && st > 0) {
-  //                   if (!contains(values, k)) {
-  //                       values[i++] = k;
-  //                       st--;
-  //                   }
-  //               }
-  //           }
-  //       }
-        Arrays.sort(values);
-        for (int k = 0; k < values.length; k++) {
-            System.out.println(student[values[k]].print());
+		if (bc > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && bc > 0) {
+                    if (!contains(array, k)) {
+                        array[i++] = k;
+                        bc--;
+                    }
+                }
+            }
+        }
+        if (sc > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && sc > 0) {
+                    if (!contains(array, k)) {
+                        array[i++] = k;
+                        sc--;
+                    }
+                }
+            }
+        }
+        if (st > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && st > 0) {
+                    if (!contains(array, k)) {
+                        array[i++] = k;
+                        st--;
+                    }
+                }
+            }
+        }
+        Arrays.sort(array);
+        for (int k = 0; k < array.length; k++) {
+            System.out.println(student[array[k]].print());
         }
 	}
 
