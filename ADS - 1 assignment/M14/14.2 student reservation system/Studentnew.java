@@ -71,18 +71,19 @@ class student {
      * @param total value
      * @param res value
      */
-    student(final String name, final String dob, final int sub1, final int sub2,
-        final int sub3, final int total, final String res) {
-        this.name = name;
-        this.dob = dob;
-        this.sub1 = sub1;
-        this.sub2 = sub2;
-        this.sub3 = sub3;
-        this.total = total;
-        this.reservation = res;
+    student(final String name1, final String dob1, final int s1, final int s2,
+        final int s3, final int total1, final String res1) {
+        this.name = name1;
+        this.dob = dob1;
+        this.sub1 = s1;
+        this.sub2 = s2;
+        this.sub3 = s3;
+        this.total = total1;
+        this.reservation = res1;
     }
     /**
-     * time complexity is 1.
+     * time complexity is 1..
+     * ..
      * @return value
      */
     public String getname() {
