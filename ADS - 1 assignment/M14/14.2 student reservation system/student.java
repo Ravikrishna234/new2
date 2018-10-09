@@ -1,4 +1,5 @@
 /**STUDENT.**/
+import java.util.Arrays;
 class student {
 	/**
 	 * variable.
@@ -208,7 +209,14 @@ class store {
         team[i - 1] = team[loc - 1];
         team[loc - 1] = swap;
     }
-
+    public boolean contains(final int[] arr, final int val) {
+        for (int n : arr) {
+            if (val == n) {
+                return true;
+            }
+        }
+        return false;
+    }
 	/**
 	 * time complexity is O(1).
 	 */
@@ -239,19 +247,56 @@ class store {
 
 	}
 	public void getr(int open,int n,int bc,int sc,int st) {
+		int[] values = new int[bc + sc + st];
+        int i = 0;
 		for(int k = open;k < n; k++) {
 			if(student[k].getreserve().equals("BC") && bc > 0) {
-				System.out.println(student[k].print());
+				values[i++] = k;
 				bc--;
 			}
 			else if(student[k].getreserve().equals("SC") && sc > 0) {
-				System.out.println(student[k].print());
+				values[i++] = k;
 				sc--;
 			}
 			else if(student[k].getreserve().equals("ST") && st > 0) {
-				System.out.println(student[k].print());
+				values[i++] = k;
 				st--;
 			}
 		}
+		if (bc > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && bc > 0) {
+                    if (!contains(values, k)) {
+                        values[i++] = k;
+                        bc--;
+                    }
+                }
+            }
+        }
+        if (sc > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && bc > 0) {
+                    if (!contains(values, k)) {
+                        values[i++] = k;
+                        bc--;
+                    }
+                }
+            }
+        }
+        if (st > 0) {
+            for (int k = open; k < n; k++) {
+            if (student[k].getreserve().equals("Open") && bc > 0) {
+                    if (!contains(values, k)) {
+                        values[i++] = k;
+                        bc--;
+                    }
+                }
+            }
+        }
+        Arrays.sort(values);
+        for (int k = 0; k < values.length; k++) {
+            System.out.println(student[values[k]].print());
+        }
 	}
+
 }
