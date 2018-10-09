@@ -49,18 +49,19 @@ class student {
 	 * variable.
 	 */
 	private int st;
-	int getage() {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	public int getage() {
         int age = 0;
         final int year = 2018, days = 365, month = 30, ten = 10;
         String[] token = this.getdob().split("-");
         age += (year - Integer.parseInt(token[2])) * days;
         age += (ten - Integer.parseInt(token[1])) * month;
         age += Integer.parseInt(token[0]);
-
         return age;
     }
-	//Date start = new SimpleDateFormat("yyyy/MM/dd", Locale.ENGLISH)
-                    //.parse(startDate);
 	student(String name,String dob,int sub1,int sub2,int sub3,int total,String res) {
 		this.name = name;
 		this.dob = dob;
@@ -103,7 +104,6 @@ class student {
 	/**
 	 * time complexity is 1
 	 */
-
 	public int gettotal() {
 		return this.total;
 	}
@@ -116,32 +116,7 @@ class student {
 	public String print() {
 		return this.getname() + "," + this.gettotal() + "," + this.getreserve();
 	}
-	/**
-	 * time complexity is 1
-	 */
-	  int compareTo(student that) {
-		if (this.gettotal() > that.gettotal()) {
-			return 1;
-		}
-		else if (this.gettotal() < that.gettotal()) {
-			return -1;
-		 } else {
-		return 0;
-	}
-		// else {
-		// if(this.getlosse() < that.getlosse()) {
-		// 	return 1;
-		// }
-		// else if(this.getlosse() > that.getlosse()) {
-		// 	return -1;
-		// } else {
-		// if(this.getdraws() < that.getdraws()) {
-		// 	return -1;
-		// } else if(this.getdraws() > that.getdraws()) {
-		// 	return 1;
-		// }
 
-}
 	/**
 	 * time complexity is 1
 	 */
@@ -160,7 +135,7 @@ class student {
 		 	return 1;
 		 } else if (this.get2() < that.get2()) {
 		 	return - 1;
-		 } else if(this.getage() > that.getage()) {
+		 } else if (this.getage() > that.getage()) {
 		 	return -1;
 		 } else if (this.getage() < that.getage()) {
 		 	return 1;
@@ -171,6 +146,7 @@ class student {
 }
 
 }
+/**student.**/
 class store {
 	student[] student;
 	int size;
@@ -178,9 +154,16 @@ class store {
 		student = new student[50];
 		size = 0;
 	}
-	public void addStudent(student s) {
+	/**
+	 * @param student value
+	 */
+	public void addStudent(final student s) {
 		student[size++] = s;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
 	public void sort() {
         int n = size;
         for (int k = n/2; k >= 1; k--)
@@ -190,25 +173,46 @@ class store {
             sink(student, 1, n);
         }
     }
-
-	 public void sink(student[] pq, int k, int n) {
+    /**
+     * @param student [description]
+     * @param pq student
+     * @param c value
+     * @param n value
+     */
+	 public void sink(final student[] pq, final int c, final int n) {
+	 	int k = c;
         while (2*k <= n) {
             int j = 2*k;
             if (j < n && less(pq, j, j+1)) j++;
             if (!less(pq, k, j)) break;
-            exch(pq, k, j);
+            exch (pq, k, j);
             k = j;
         }
     }
-    public boolean less(student[] student, int i, int j) {
+    /**
+     * @param student value
+     * @param i value
+     * @param j value
+     * @return value
+     */
+    public boolean less(final student[] student, final int i, final int j) {
         return student[i - 1].compare(student[j - 1]) >= 0;
     }
-
+    /**
+     * @param team student
+     * @param i value
+     * @param loc value
+     */
     public void exch(student[] team, int i, int loc) {
         student swap = team[i - 1];
         team[i - 1] = team[loc - 1];
         team[loc - 1] = swap;
     }
+    /**
+     * @param arr value
+     * @param val value
+     * @return value
+     */
     public boolean contains(final int[] arr, final int val) {
         for (int n : arr) {
             if (val == n) {
@@ -249,16 +253,16 @@ class store {
 	public void getr(int open,int n,int bc,int sc,int st) {
 		int[] array = new int[bc + sc + st];
         int i = 0;
-		for(int k = open;k < n; k++) {
-			if(student[k].getreserve().equals("BC") && bc > 0) {
+		for (int k = open;k < n; k++) {
+			if (student[k].getreserve().equals("BC") && bc > 0) {
 				array[i++] = k;
 				bc--;
 			}
-			else if(student[k].getreserve().equals("SC") && sc > 0) {
+			else if (student[k].getreserve().equals("SC") && sc > 0) {
 				array[i++] = k;
 				sc--;
 			}
-			else if(student[k].getreserve().equals("ST") && st > 0) {
+			else if (student[k].getreserve().equals("ST") && st > 0) {
 				array[i++] = k;
 				st--;
 			}
