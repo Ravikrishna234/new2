@@ -282,12 +282,12 @@ class store {
 				array[i++] = k;
 				bc--;
 			}
-		}  else if(sc > 0) {
+		}  if(sc > 0) {
 			if (student[k].getreserve().equals("SC")) {
 				array[i++] = k;
 				sc--;
 			}
-		}  else if(st > 0) {
+		}  if(st > 0) {
 			 if (student[k].getreserve().equals("ST")) {
 				array[i++] = k;
 				st--;
