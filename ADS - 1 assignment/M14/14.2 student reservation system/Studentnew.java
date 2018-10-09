@@ -50,6 +50,7 @@ class student {
     private int st;
     /**
      * time complexity is O(1).
+     * @return value
      */
     public int getage() {
         int age = 0;
@@ -80,44 +81,51 @@ class student {
         this.total = total;
         this.reservation = res;
     }
-    /**.
+    /**
      * time complexity is 1.
+     * @return value
      */
     public String getname() {
         return this.name;
     }
-    /**.
+    /**
      * time complexity is 1.
+     * * @return value
      */
     public String getdob() {
         return this.dob;
     }
-    /**.
+    /**
      * time complexity is 1.
+     * @return value
      */
     public int get1() {
         return this.sub1;
     }
-    /**.
+    /**
      * time complexity is 1.
+     * @return value
      */
     public int get2() {
         return this.sub2;
     }
     /**
      * time complexity is 1.
+     * @return value
      */
     public int get3() {
         return this.sub3;
     }
     /**
      * time complexity is 1.
+     * @return value
      */
     public int gettotal() {
         return this.total;
     }
     /**
      * time complexity is 1.
+     * @return value
      */
     public String getreserve() {
         return this.reservation;

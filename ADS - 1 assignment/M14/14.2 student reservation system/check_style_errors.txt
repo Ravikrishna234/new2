@@ -1,19 +1,12 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:2:7: Name 'student' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:54: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:73:26: 'name' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:73:45: 'dob' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:73:60: 'sub1' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:73:76: 'sub2' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:19: 'sub3' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:35: 'total' hides a field. [HiddenField]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:86: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:92: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:98: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:104: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:110: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:116: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:122: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:148:21: '-' is followed by whitespace. [NoWhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:26: 'name' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:45: 'dob' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:60: 'sub1' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:76: 'sub2' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:19: 'sub3' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:35: 'total' hides a field. [HiddenField]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:95: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:156:21: '-' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 9 errors.
