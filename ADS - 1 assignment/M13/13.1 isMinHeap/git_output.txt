@@ -1,6 +1,0 @@
-[master 0ebfb93] "ads1_m13_a1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 1 file changed, 1 insertion(+), 1 deletion(-)
- rewrite ADS - 1 assignment/M13/13.1 isMinHeap/result/score.json (73%)
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-To https://github.com/Ravikrishna234/new2.git
-   3241f70..0ebfb93  master -> master
