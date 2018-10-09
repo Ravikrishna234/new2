@@ -7,6 +7,5 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:19: 'sub3' hides a field. [HiddenField]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:35: 'total' hides a field. [HiddenField]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:95: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:156:21: '-' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 8 errors.
