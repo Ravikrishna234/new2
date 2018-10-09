@@ -53,6 +53,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:151:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:154:18: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:162:33: '-' is followed by whitespace. [NoWhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:163:27: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:167:18: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:174: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:174:7: Name 'store' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
@@ -119,4 +120,4 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:261: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:261:32: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 119 errors.
+Checkstyle ends with 120 errors.

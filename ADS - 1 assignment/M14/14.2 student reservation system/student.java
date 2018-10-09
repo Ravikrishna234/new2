@@ -160,9 +160,9 @@ class student {
 		 	return 1;
 		 } else if (this.get2() < that.get2()) {
 		 	return - 1;
-		 } else if (this.getdob().compareTo(that.getdob()) > 0) {
+		 } else if(this.getage() > that.getage()) {
 		 	return 1;
-		 } else if (this.getdob().compareTo(that.getdob()) < 0) {
+		 } else if (this.getage() < that.getage()) {
 		 	return -1;
 		 }
 			else {
