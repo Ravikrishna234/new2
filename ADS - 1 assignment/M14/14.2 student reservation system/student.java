@@ -175,7 +175,7 @@ class store {
 	 */
 	public void sort() {
         int n = size;
-        for (int k = n/2; k >= 1; k--)
+        for (int k = n / 2; k >= 1; k--)
             sink(student, k, n);
         while (n > 1) {
             exch(student, 1, n--);

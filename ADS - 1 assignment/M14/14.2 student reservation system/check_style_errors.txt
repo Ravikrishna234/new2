@@ -35,8 +35,6 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:165:12: Unused @param tag for 'student'. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:168:46: Expected @param tag for 's'. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:178: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:178:23: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:178:24: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:186:8: Unused @param tag for 'student'. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:194:17: '*' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:194:18: '*' is not followed by whitespace. [WhitespaceAround]
@@ -70,4 +68,4 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:295:17: '}' at column 3 should be alone on a line. [RightCurly]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:295:22: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 70 errors.
+Checkstyle ends with 68 errors.
