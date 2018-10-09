@@ -162,11 +162,11 @@ Aditya,80,ST
 priya,76,SC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at student.getage(student.java:60)
-	at student.compare(student.java:146)
-	at store.less(store.java:57)
-	at store.sink(store.java:42)
-	at store.sort(store.java:28)
+	at student.getage(student.java:61)
+	at student.compare(student.java:147)
+	at store.less(student.java:211)
+	at store.sink(student.java:196)
+	at store.sort(student.java:182)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -190,11 +190,11 @@ Ajay,76,Open
 Tanya,66,BC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at student.getage(student.java:60)
-	at student.compare(student.java:146)
-	at store.less(store.java:57)
-	at store.sink(store.java:42)
-	at store.sort(store.java:28)
+	at student.getage(student.java:61)
+	at student.compare(student.java:147)
+	at store.less(student.java:211)
+	at store.sink(student.java:196)
+	at store.sort(student.java:182)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -245,11 +245,11 @@ Amit,76,Open
 Arjun,75,Open
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at student.getage(student.java:60)
-	at student.compare(student.java:146)
-	at store.less(store.java:57)
-	at store.sink(store.java:42)
-	at store.sort(store.java:25)
+	at student.getage(student.java:61)
+	at student.compare(student.java:147)
+	at store.less(student.java:211)
+	at store.sink(student.java:196)
+	at store.sort(student.java:179)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
@@ -302,10 +302,10 @@ priya,72,SC
 varsha,66,BC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at student.getage(student.java:60)
-	at student.compare(student.java:146)
-	at store.less(store.java:57)
-	at store.sink(store.java:42)
-	at store.sort(store.java:28)
+	at student.getage(student.java:61)
+	at student.compare(student.java:147)
+	at store.less(student.java:211)
+	at store.sink(student.java:196)
+	at store.sort(student.java:182)
 	at Solution.main(Solution.java:33)
 ----------------------------------------
