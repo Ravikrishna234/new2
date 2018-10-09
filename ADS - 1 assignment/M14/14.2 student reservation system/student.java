@@ -275,7 +275,7 @@ class store {
         }
         if (sc > 0) {
             for (int k = open; k < n; k++) {
-            if (student[k].getreserve().equals("Open") && bc > 0) {
+            if (student[k].getreserve().equals("Open") && sc > 0) {
                     if (!contains(values, k)) {
                         values[i++] = k;
                         bc--;
@@ -285,7 +285,7 @@ class store {
         }
         if (st > 0) {
             for (int k = open; k < n; k++) {
-            if (student[k].getreserve().equals("Open") && bc > 0) {
+            if (student[k].getreserve().equals("Open") && st > 0) {
                     if (!contains(values, k)) {
                         values[i++] = k;
                         bc--;

@@ -210,9 +210,9 @@ Abhishek,60,BC
 divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
-divya,99,Open
-priya,76,SC
-Tanya,66,BC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
+	at store.getr(student.java:290)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -299,12 +299,9 @@ Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
 mahesh,87,Open
-divya,99,Open
-divya,99,Open
-divya,99,Open
-divya,99,Open
-riya,83,Open
-Aditya,80,Open
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at store.getr(student.java:280)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
