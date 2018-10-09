@@ -161,9 +161,9 @@ class student {
 		 } else if (this.get2() < that.get2()) {
 		 	return - 1;
 		 } else if(this.getage() > that.getage()) {
-		 	return 1;
-		 } else if (this.getage() < that.getage()) {
 		 	return -1;
+		 } else if (this.getage() < that.getage()) {
+		 	return 1;
 		 }
 			else {
 		return 0;
