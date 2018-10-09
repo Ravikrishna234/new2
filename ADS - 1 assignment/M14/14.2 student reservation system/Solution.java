@@ -23,17 +23,17 @@ class Solution {
         while(i < n) {
                 /**STUDENT.**/
             String[] tokens = s.nextLine().split(",");
-        //     //student stud = new student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
-        //         //Integer.parseInt(tokens[3]),
-        //         //Integer.parseInt(tokens[4]),Integer.parseInt(tokens[5]),
-        //             tokens[6]);
-        //     sto.addStudent(stud);
-        //     i++;
+            student stud = new student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
+                 Integer.parseInt(tokens[3]),
+                 Integer.parseInt(tokens[4]),Integer.parseInt(tokens[5]),
+                     tokens[6]);
+             sto.addStudent(stud);
+             i++;
          }
-        // sto.sort();
-        // System.out.println(sto.toString());
-        // System.out.println("\n" +sto.toString1(open));
-        // sto.getr(open,n,bc,sc,st);
+         sto.sort();
+         System.out.println(sto.toString());
+         System.out.println("\n" +sto.toString1(open));
+         sto.getr(open,n,bc,sc,st);
     }
 }
 
