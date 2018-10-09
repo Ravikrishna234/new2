@@ -278,7 +278,7 @@ class store {
             if (student[k].getreserve().equals("Open") && sc > 0) {
                     if (!contains(values, k)) {
                         values[i++] = k;
-                        bc--;
+                        sc--;
                     }
                 }
             }
@@ -288,7 +288,7 @@ class store {
             if (student[k].getreserve().equals("Open") && st > 0) {
                     if (!contains(values, k)) {
                         values[i++] = k;
-                        bc--;
+                        st--;
                     }
                 }
             }
