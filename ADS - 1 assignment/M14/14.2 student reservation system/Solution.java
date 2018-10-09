@@ -36,3 +36,4 @@ class Solution {
         sto.getr(open,n,bc,sc,st);
 	}
 }
+
