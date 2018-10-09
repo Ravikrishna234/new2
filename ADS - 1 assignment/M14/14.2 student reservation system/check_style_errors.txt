@@ -1,19 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:2:7: Name 'student' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:66:8: Unused @param tag for 'name'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:67:8: Unused @param tag for 'dob'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:68:8: Unused @param tag for 'sub1'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:69:8: Unused @param tag for 'sub2'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:70:8: Unused @param tag for 'sub3'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:71:8: Unused @param tag for 'total'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:72:8: Unused @param tag for 'res'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:26: Expected @param tag for 'name1'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:46: Expected @param tag for 'dob1'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:62: Expected @param tag for 's1'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:74:76: Expected @param tag for 's2'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:19: Expected @param tag for 's3'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:33: Expected @param tag for 'total1'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:75:54: Expected @param tag for 'res1'. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:96: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 2 errors.

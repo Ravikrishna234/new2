@@ -63,13 +63,13 @@ class student {
         return age;
     }
     /**
-     * @param name value
-     * @param dob value
-     * @param sub1 value
-     * @param sub2 value
-     * @param sub3 value
-     * @param total value
-     * @param res value
+     * @param name1 value
+     * @param dob1 value
+     * @param s1 value
+     * @param s2 value
+     * @param s3 value
+     * @param total1 value
+     * @param res1 value
      */
     student(final String name1, final String dob1, final int s1, final int s2,
         final int s3, final int total1, final String res1) {
