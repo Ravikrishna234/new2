@@ -49,8 +49,6 @@ class student {
      */
     private int st;
     /**
-     * @brief [brief description]
-     * @details [long description]
      * time complexity is O(1).
      */
     public int getage() {
@@ -83,53 +81,57 @@ class student {
         this.reservation = res;
     }
     /**.
-     * time complexity is 1
+     * time complexity is 1.
      */
     public String getname() {
         return this.name;
     }
     /**.
-     * time complexity is 1
+     * time complexity is 1.
      */
     public String getdob() {
         return this.dob;
     }
     /**.
-     * time complexity is 1
+     * time complexity is 1.
      */
     public int get1() {
         return this.sub1;
     }
     /**.
-     * time complexity is 1
+     * time complexity is 1.
      */
     public int get2() {
         return this.sub2;
     }
     /**
-     * time complexity is 1
+     * time complexity is 1.
      */
     public int get3() {
         return this.sub3;
     }
     /**
-     * time complexity is 1
+     * time complexity is 1.
      */
     public int gettotal() {
         return this.total;
     }
     /**
-     * time complexity is 1
+     * time complexity is 1.
      */
     public String getreserve() {
         return this.reservation;
     }
+    /**
+     * @return value
+     */
     public String print() {
         return this.getname() + "," + this.gettotal() + "," + this.getreserve();
     }
-
     /**
-     * time complexity is 1
+     * time complexity is 1.
+     * @param that value
+     * @return value
      */
     public int compare(final student that) {
         if (this.gettotal() > that.gettotal()) {
