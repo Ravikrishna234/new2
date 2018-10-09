@@ -63,7 +63,8 @@ class student {
         age += Integer.parseInt(token[0]);
         return age;
     }
-	student(String name,String dob,int sub1,int sub2,int sub3,int total,String res) {
+	student(final String name, final String dob, final int sub1, final int sub2,
+		final int sub3, final int total, final String res) {
 		this.name = name;
 		this.dob = dob;
 		this.sub1 = sub1;
@@ -276,18 +277,22 @@ class store {
 		int[] array = new int[bc + sc + st];
         int i = 0;
 		for (int k = open;k < n; k++) {
-			if (student[k].getreserve().equals("BC") && bc > 0) {
+			if(bc > 0) {
+			if (student[k].getreserve().equals("BC")) {
 				array[i++] = k;
 				bc--;
 			}
-			else if (student[k].getreserve().equals("SC") && sc > 0) {
+		}  else if(sc > 0) {
+			if (student[k].getreserve().equals("SC")) {
 				array[i++] = k;
 				sc--;
 			}
-			else if (student[k].getreserve().equals("ST") && st > 0) {
+		}  else if(st > 0) {
+			 if (student[k].getreserve().equals("ST")) {
 				array[i++] = k;
 				st--;
 			}
+		}
 		}
 		if (bc > 0) {
             for (int k = open; k < n; k++) {
