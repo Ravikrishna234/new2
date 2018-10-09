@@ -23,7 +23,7 @@ class Solution {
         while(i < n) {
                 /**STUDENT.**/
             String[] tokens = s.nextLine().split(",");
-            student stud = new student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
+            Student stud = new Student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
                  Integer.parseInt(tokens[3]),
                  Integer.parseInt(tokens[4]),Integer.parseInt(tokens[5]),
                      tokens[6]);

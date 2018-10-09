@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:2:7: Name 'student' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Studentnew.java:96: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.

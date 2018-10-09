@@ -1,17 +1,17 @@
 import java.util.Arrays;
 /**student.**/
 class store {
-	student[] student;
+	Student[] student;
 	int size;
 	store() {
-		student = new student[50];
+		student = new Student[50];
 		size = 0;
 	}
 	/**
 	 * @param student value
 	 * time complexity is O(1).
 	 */
-	public void addStudent(final student s) {
+	public void addStudent(final Student s) {
 		student[size++] = s;
 	}
 	/**
@@ -35,7 +35,7 @@ class store {
      * @param n value
      * time complexity is O(N).
      */
-	 public void sink(final student[] pq, final int c, final int n) {
+	 public void sink(final Student[] pq, final int c, final int n) {
 	 	int k = c;
         while (2*k <= n) {
             int j = 2*k;
@@ -53,7 +53,7 @@ class store {
      * time complexity is O(1).
      *
      */
-    public boolean less(final student[] student, final int i, final int j) {
+    public boolean less(final Student[] student, final int i, final int j) {
         return student[i - 1].compare(student[j - 1]) >= 0;
     }
     /**
@@ -62,8 +62,8 @@ class store {
      * @param loc value
      * time complexity is O(1).
      */
-    public void exch(final student[] team, final int i, final int loc) {
-        student swap = team[i - 1];
+    public void exch(final Student[] team, final int i, final int loc) {
+        Student swap = team[i - 1];
         team[i - 1] = team[loc - 1];
         team[loc - 1] = swap;
     }
