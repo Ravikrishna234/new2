@@ -133,24 +133,21 @@ class student {
 	public int compare(final student that) {
 		if (this.gettotal() > that.gettotal()) {
 			return 1;
-		}
-		 else if (this.gettotal() < that.gettotal()) {
+		} else if (this.gettotal() < that.gettotal()) {
 		 	return -1;
-		 }
-		 else if (this.get3() > that.get3()) {
+		} else if (this.get3() > that.get3()) {
 		 	return 1;
-		 } else if (this.get3() < that.get3()) {
+		} else if (this.get3() < that.get3()) {
 		 	return -1;
-		 } else if (this.get2() > that.get2()) {
+		} else if (this.get2() > that.get2()) {
 		 	return 1;
-		 } else if (this.get2() < that.get2()) {
+		} else if (this.get2() < that.get2()) {
 		 	return - 1;
-		 } else if (this.getage() > that.getage()) {
+		} else if (this.getage() > that.getage()) {
 		 	return -1;
-		 } else if (this.getage() < that.getage()) {
+		} else if (this.getage() < that.getage()) {
 		 	return 1;
-		 }
-			else {
+		} else {
 		return 0;
 	}
 }

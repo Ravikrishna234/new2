@@ -105,7 +105,7 @@ final class store {
 		for (int i = 0; i < vacancy - 1; i++) {
 			s += student[i].getname() + "," + student[i].gettotal()
 			+ "," + student[i].getreserve();
-			s += " \n ";
+			s += "\n ";
 		}
 		s += student[vacancy - 1].getname() + "," + student[vacancy - 1].gettotal()
 		+ "," + student[vacancy - 1].getreserve();

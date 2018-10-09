@@ -24,9 +24,6 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:130: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:133: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:133:42: Expected @param tag for 'that'. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:136:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:139:18: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:147:33: '-' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:152:18: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:145:33: '-' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 26 errors.

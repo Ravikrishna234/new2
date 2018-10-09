@@ -55,9 +55,9 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya,99,ST 
- Deepak,98,Open 
- Ira,93,ST 
+divya,99,ST
+ Deepak,98,Open
+ Ira,93,ST
  tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
@@ -135,10 +135,10 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya,99,ST 
- Ishita,99,Open 
- Deepak,98,Open 
- Ira,93,ST 
+divya,99,ST
+ Ishita,99,Open
+ Deepak,98,Open
+ Ira,93,ST
  tanvi,90,BC
 Raj,87,BC
 Aditya,80,ST
@@ -163,7 +163,7 @@ priya,76,SC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at student.getage(student.java:60)
-	at student.compare(student.java:148)
+	at student.compare(student.java:146)
 	at store.less(store.java:57)
 	at store.sink(store.java:42)
 	at store.sort(store.java:28)
@@ -191,7 +191,7 @@ Tanya,66,BC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at student.getage(student.java:60)
-	at student.compare(student.java:148)
+	at student.compare(student.java:146)
 	at store.less(store.java:57)
 	at store.sink(store.java:42)
 	at store.sort(store.java:28)
@@ -246,7 +246,7 @@ Arjun,75,Open
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at student.getage(student.java:60)
-	at student.compare(student.java:148)
+	at student.compare(student.java:146)
 	at store.less(store.java:57)
 	at store.sink(store.java:42)
 	at store.sort(store.java:25)
@@ -303,7 +303,7 @@ varsha,66,BC
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at student.getage(student.java:60)
-	at student.compare(student.java:148)
+	at student.compare(student.java:146)
 	at store.less(store.java:57)
 	at store.sink(store.java:42)
 	at store.sort(store.java:28)
