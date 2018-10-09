@@ -1,4 +1,6 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Solution.java:23:14: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.2 student reservation system\Solution.java:26: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.
