@@ -1,4 +1,4 @@
-/**STUDENT.**/
+/**student.**/
 class student {
 	/**
 	 * variable.
@@ -62,17 +62,14 @@ class student {
         age += Integer.parseInt(token[0]);
         return age;
     }
-    /**.
-     * @brief [brief description]
-     * @details [long description]
-     *
-     * @param String [description]
-     * @param String [description]
-     * @param int [description]
-     * @param int [description]
-     * @param int [description]
-     * @param int [description]
-     * @param String [description]
+    /**
+     * @param name value
+     * @param dob value
+     * @param sub1 value
+     * @param sub2 value
+     * @param sub3 value
+     * @param total value
+     * @param res value
      */
 	student(final String name, final String dob, final int sub1, final int sub2,
 		final int sub3, final int total, final String res) {

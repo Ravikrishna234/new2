@@ -1,6 +1,16 @@
 import java.util.Scanner;
+/**STUDENT.**/
 class Solution {
-	public static void main(String[] args) {
+        /**
+         * @brief [brief description]
+         * @details [long description]
+         */
+        private Solution() { }
+        /**
+         * @param args value
+         * Time Complexity is O(N).
+         */
+	public static void main(final String[] args) {
 	Scanner s = new Scanner(System.in);
 	store sto = new store();
 	int n = Integer.parseInt(s.nextLine());
@@ -11,6 +21,7 @@ class Solution {
         int st = Integer.parseInt(s.nextLine());
         int i = 0;
         while(i < n) {
+                /**STUDENT.**/
         	String[] tokens = s.nextLine().split(",");
         	student stud = new student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),
         		Integer.parseInt(tokens[3]),
