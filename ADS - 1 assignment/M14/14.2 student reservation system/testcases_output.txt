@@ -55,10 +55,10 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya , 99 , ST 
- Deepak , 98 , Open 
- Ira , 93 , ST 
- tanvi , 90 , BC
+divya,99,ST 
+ Deepak,98,Open 
+ Ira,93,ST 
+ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 ----------------------------------------
@@ -135,11 +135,11 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya , 99 , ST 
- Ishita , 99 , Open 
- Deepak , 98 , Open 
- Ira , 93 , ST 
- tanvi , 90 , BC
+divya,99,ST 
+ Ishita,99,Open 
+ Deepak,98,Open 
+ Ira,93,ST 
+ tanvi,90,BC
 Raj,87,BC
 Aditya,80,ST
 priya,72,SC
