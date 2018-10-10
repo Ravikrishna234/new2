@@ -151,7 +151,7 @@ public class Maxpq<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMax() {
-        //if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         Key max = pq[1];
         exch(1, n--);
         sink(1);
