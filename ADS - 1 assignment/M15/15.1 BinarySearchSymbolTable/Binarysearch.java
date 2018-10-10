@@ -57,11 +57,13 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
     public String keys() {
     	String s = "";
     	int j = 0;
-    	for(int i = 0; i < keys.length; i++) {
+    	for(int i = 0; i < size - 1; i++) {
     		if(keys[i] != null) {
-    		s += keys[i] + " " + vals[i] + "\n";
+    		s += keys[i] + " " + vals[i] + "\n" ;
     	}
+
     	}
+    	s += keys[size - 1] + " " + vals[size - 1];
     	return s;
     }
  public boolean contains(Key key) {
