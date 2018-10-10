@@ -1,0 +1,15 @@
+Starting audit...
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:12:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:18:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:20:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:25:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:29:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:33:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:34:65: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:34:66: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:37:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M14\14.1 Dynamic Median Finding\Solution.java:41:27: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 12 errors.

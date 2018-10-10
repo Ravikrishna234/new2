@@ -1,29 +1,47 @@
-import java.util.Arrays;
-class median {
-	int[] arr;
-	int size;
-	median() {
-		arr = new int[20];
-		size = 0;
-	}
-	public void add(int value) {
-		if(size == arr.length - 1) {
-			resize();
+import java.util.Scanner;
+/**DYNAMICMEDIANFIND.**/
+final class Solution {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @param args value
+	 */
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = Integer.parseInt(s.nextLine());
+		Minpq<Float> min = new Minpq<Float>(n);
+		Maxpq<Float> max = new Maxpq<Float>(n);
+		float median = 0.0f;
+		for(int i = 0; i < n; i++) {
+			float f = Float.parseFloat(s.nextLine());
+			if(f > median) {
+				min.insert(f);
+			} else {
+				max.insert(f);
+			}
+			if(min.size() - max.size() > 1) {
+				float f1 = max.delMax();
+				min.insert(f1);
+			}
+			if(max.size() - min.size() > 1) {
+				float f2 = min.delMin();
+				max.insert(f2);
+			}
+			if(min.size() == max.size()) {
+				median = (min.min() + max.max())/2;
+				System.out.println(median);
+			}
+			if(min.size() > max.size()) {
+				median = min.min();
+				System.out.println(median);
+			}
+			if(max.size() > min.size()) {
+				median = max.max();
+				System.out.println(median);
+			}
 		}
-		arr[size++] = value;
 	}
-	public void resize() {
-		arr = Arrays.copyOf(arr,arr.length * 2);
-	}
-	 public void swim(int k) {
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
-        }
-    }
-    public void exch(int i, int j) {
-        Key swap = pq[i];
-        pq[i] = pq[j];
-        pq[j] = swap;
-    }
 }
