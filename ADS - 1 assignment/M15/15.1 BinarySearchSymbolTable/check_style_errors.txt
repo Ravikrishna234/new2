@@ -1,11 +1,4 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:3: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:21: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:26: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:29: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:35: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:41: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
