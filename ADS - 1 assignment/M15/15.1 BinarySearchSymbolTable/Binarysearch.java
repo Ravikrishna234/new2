@@ -7,6 +7,9 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
     	keys = (Key[]) new Comparable[20];
         vals = (Value[]) new Object[20];
     }
+    /**
+     * Time complexity is O(log(N))
+     */
     public void put(Key key, Value value) {
     	if(size == keys.length) {
     		resize();
@@ -33,6 +36,13 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
     	size++;
 
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param key [description]
+     * @return [description]
+     */
     public int rank(Key key) {
         if (key == null) {
         	System.out.println("Key is null");
@@ -47,13 +57,29 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
         }
         return lo;
     }
+    /**
+     * @brief [brief description]
+     * Time complexity is O(1)
+     * @details [long description]
+     */
  public int size() {
         return size;
     }
-
+/**
+ * @brief [brief description]
+ * @details [long description]
+ * Time complexity is O(1)
+ * @return [description]
+ */
  public boolean isEmpty() {
         return size() == 0;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(N)
+     * @return [description]
+     */
     public String keys() {
     	String s = "";
     	int j = 0;
@@ -66,9 +92,23 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
     	s += keys[size - 1] + " " + vals[size - 1];
     	return s;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     * @param key [description]
+     * @return [description]
+     */
  public boolean contains(Key key) {
         return get(key) != null;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     * @param key [description]
+     * @return [description]
+     */
     public Value get(Key key) {
         if (isEmpty()) {
          return null;
@@ -79,6 +119,12 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
         }
         return null;
     }
+   	/**
+   	 * @brief [brief description]
+   	 * @details [long description]
+   	 *  Time complexity is O(N)
+   	 * @param key [description]
+   	 */
     public void delete(Key key) {
         if (key == null) {
         	return;
@@ -101,6 +147,11 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
         return;
 
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     */
     public void deleteMin() {
         if(isEmpty())
         {
@@ -109,6 +160,11 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
         }
         delete(min());
     }
+    /**
+     * @brief
+     *  Time complexity is O(1)
+     * @details [long description]
+     */
     public void deleteMax() {
 		if(isEmpty()) {
 			System.out.println("Empty");
@@ -116,16 +172,40 @@ public class Binarysearch<Key extends Comparable<Key>, Value> {
 		}
 		delete(max());
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     * @return [description]
+     */
     public Key min() {
         return keys[0];
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     * @return [description]
+     */
      public Key max() {
         return keys[size - 1];
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(N)
+     */
     public void resize() {
     	keys = Arrays.copyOf(keys, keys.length * 2);
     	vals = Arrays.copyOf(vals, vals.length * 2);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     *  Time complexity is O(1)
+     * @param key [description]
+     * @return [description]
+     */
     public Key floor(Key key) {
         if (key == null) {
         	System.out.println("null");

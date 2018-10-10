@@ -8,6 +8,7 @@ final class Solution {
     private Solution() { }
     /**
      * @param args value
+     * Time complexity is O(N)
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
