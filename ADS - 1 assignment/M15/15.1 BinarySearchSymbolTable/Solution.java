@@ -1,15 +1,24 @@
 import java.util.Scanner;
+/**BINARYSEARCH.**/
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @param args value
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		String[] str = s.nextLine().split(" ");
 		Binarysearch bs = new Binarysearch();
-		for(int i = 0; i < str.length; i++) {
-			bs.put(str[i],i);
+		for (int i = 0; i < str.length; i++) {
+			bs.put(str[i], i);
 		}
-		while(s.hasNextLine()) {
+		while (s.hasNextLine()) {
 			String[] tokens = s.nextLine().split(" ");
-			switch(tokens[0]) {
+			switch (tokens[0]) {
 				case "max":
 						System.out.println(bs.max());
 						break;
