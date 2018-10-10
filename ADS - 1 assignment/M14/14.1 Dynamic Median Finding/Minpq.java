@@ -54,7 +54,9 @@ public class Minpq<Key> implements Iterable<Key> {
      * Takes time proportional to the number of keys, using sink-based heap construction.
      *
      * @param  keys the array of keys
-     */
+     * /**
+    * Time complexity is O(log(N))
+    */
     public Minpq(Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
@@ -71,18 +73,24 @@ public class Minpq<Key> implements Iterable<Key> {
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
      */
+    /**
+    * Time complexity is O(1)
+    */
     public boolean isEmpty() {
         return n == 0;
     }
 
     /**
      * Returns the number of keys on this priority queue.
-     *
+    * Time complexity is O(1)
      * @return the number of keys on this priority queue
      */
     public int size() {
         return n;
     }
+    /**
+    * Time complexity is O(log(N))
+    */
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
@@ -94,7 +102,7 @@ public class Minpq<Key> implements Iterable<Key> {
     }
     /**
      * Returns a smallest key on this priority queue.
-     *
+     * Time complexity is O(1)
      * @return a smallest key on this priority queue
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -104,6 +112,12 @@ public class Minpq<Key> implements Iterable<Key> {
     }
 
     // helper function to double the size of the heap array
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     * @param capacity [description]
+     */
     private void resize(int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
@@ -115,7 +129,7 @@ public class Minpq<Key> implements Iterable<Key> {
 
     /**
      * Adds a new key to this priority queue.
-     *
+     * Time complexity is O(1)
      * @param  x the key to add to this priority queue
      */
     public void insert(Key x) {
@@ -131,6 +145,7 @@ public class Minpq<Key> implements Iterable<Key> {
     /**
      * @return a smallest key on this priority queue
      * @throws NoSuchElementException if this priority queue is empty
+     * Time complexity is O(log(N))
      */
     public Key delMin() {
         if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
@@ -147,7 +162,12 @@ public class Minpq<Key> implements Iterable<Key> {
    /***************************************************************************
     * Helper functions to restore the heap invariant.
     ***************************************************************************/
-
+   /**
+    * @brief [brief description]
+    * @details [long description]
+    * Time complexity is O(log(N))
+    * @param k [description]
+    */
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
@@ -156,7 +176,16 @@ public class Minpq<Key> implements Iterable<Key> {
     }
    /***************************************************************************
     * Helper functions for compares and swaps.
-    ***************************************************************************/
+    *********************************************************************1/
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1)
+     * @param i [description]
+     * @param j [description]
+     *
+     * @return [description]
+     */
     private boolean greater(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
@@ -165,7 +194,15 @@ public class Minpq<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param N [description]
+     * @param j [description]
+     *
+     * @return [description]
+     */
     private void exch(int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
@@ -173,11 +210,24 @@ public class Minpq<Key> implements Iterable<Key> {
     }
 
     // is pq[1..N] a min heap?
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * @return [description]
+     * Time complexity is O(1)
+     */
     private boolean isMinHeap() {
         return isMinHeap(1);
     }
 
     // is subtree of pq[1..n] rooted at k a min heap?
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param k [description]
+     * @return [description]
+     */
     private boolean isMinHeap(int k) {
         if (k > n) return true;
         int left = 2*k;

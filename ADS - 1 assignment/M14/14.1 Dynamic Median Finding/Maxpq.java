@@ -74,6 +74,7 @@ public class Maxpq<Key> implements Iterable<Key> {
      * Takes time proportional to the number of keys, using sink-based heap construction.
      *
      * @param  keys the array of keys
+     * Time complexity is O(log(N))
      */
     public Maxpq(Key[] keys) {
         n = keys.length;
@@ -92,6 +93,8 @@ public class Maxpq<Key> implements Iterable<Key> {
      *
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
+     *
+     * Time complexity is O(1)
      */
     public boolean isEmpty() {
         return n == 0;
@@ -99,7 +102,7 @@ public class Maxpq<Key> implements Iterable<Key> {
 
     /**
      * Returns the number of keys on this priority queue.
-     *
+     * Time complexity is O(1)
      * @return the number of keys on this priority queue
      */
     public int size() {
@@ -108,7 +111,7 @@ public class Maxpq<Key> implements Iterable<Key> {
 
     /**
      * Returns a largest key on this priority queue.
-     *
+     * Time complexity is O(1)
      * @return a largest key on this priority queue
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -118,6 +121,9 @@ public class Maxpq<Key> implements Iterable<Key> {
     }
 
     // helper function to double the size of the heap array
+    /**
+    * Time complexity is O(N)
+    */
     private void resize(int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
@@ -132,7 +138,9 @@ public class Maxpq<Key> implements Iterable<Key> {
      * Adds a new key to this priority queue.
      *
      * @param  x the new key to add to this priority queue
-     */
+     * /**
+    * Time complexity is O(1)
+    */
     public void insert(Key x) {
 
         // double size of array if necessary
@@ -149,7 +157,9 @@ public class Maxpq<Key> implements Iterable<Key> {
      *
      * @return a largest key on this priority queue
      * @throws NoSuchElementException if this priority queue is empty
-     */
+     * /**
+    * Time complexity is O(1)
+    */
     public Key delMax() {
         if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         Key max = pq[1];
@@ -165,14 +175,18 @@ public class Maxpq<Key> implements Iterable<Key> {
    /***************************************************************************
     * Helper functions to restore the heap invariant.
     ***************************************************************************/
-
+   /**
+    * Time complexity is O(log(N))
+    */
     private void swim(int k) {
         while (k > 1 && less(k/2, k)) {
             exch(k, k/2);
             k = k/2;
         }
     }
-
+    /**
+    * Time complexity is O(log(N))
+    */
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
@@ -186,6 +200,9 @@ public class Maxpq<Key> implements Iterable<Key> {
    /***************************************************************************
     * Helper functions for compares and swaps.
     ***************************************************************************/
+   /**
+    * Time complexity is O(1)
+    */
     private boolean less(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
@@ -194,7 +211,9 @@ public class Maxpq<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) < 0;
         }
     }
-
+    /**
+    * Time complexity is O(N)
+    */
     private void exch(int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
@@ -202,11 +221,17 @@ public class Maxpq<Key> implements Iterable<Key> {
     }
 
     // is pq[1..N] a max heap?
+    /**
+    * Time complexity is O(1)
+    */
     private boolean isMaxHeap() {
         return isMaxHeap(1);
     }
 
     // is subtree of pq[1..n] rooted at k a max heap?
+    /**
+    * Time complexity is O(log(N))
+    */
     private boolean isMaxHeap(int k) {
         if (k > n) return true;
         int left = 2*k;
