@@ -12,8 +12,7 @@ Expected Output:
 5.5
 Your Output: 
 1.0
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at Maxpq.delMax(Maxpq.java:154)
+Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:26)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -100031,8 +100030,7 @@ Your Output:
 80144.0
 80150.0
 95803.0
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at Minpq.delMin(Minpq.java:138)
+Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -200042,8 +200040,7 @@ Your Output:
 82102.0
 73620.0
 90584.0
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at Minpq.delMin(Minpq.java:138)
+Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -201050,7 +201047,6 @@ Expected Output:
 51034.0
 Your Output: 
 29689.0
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at Maxpq.delMax(Maxpq.java:154)
+Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:26)
 ----------------------------------------

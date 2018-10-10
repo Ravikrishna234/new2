@@ -135,7 +135,7 @@ public class Minpq<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        //if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
         Key min = pq[1];
         exch(1, n--);
         sink(1);
