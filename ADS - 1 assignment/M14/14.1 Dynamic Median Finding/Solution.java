@@ -24,11 +24,11 @@ final class Solution {
 			}
 			if(min.size() - max.size() > 1) {
 				float f1 = min.delMin();
-				min.insert(f1);
+				max.insert(f1);
 			}
 			if(max.size() - min.size() > 1) {
 				float f2 = max.delMax();
-				max.insert(f2);
+				min.insert(f2);
 			}
 			if(min.size() == max.size()) {
 				median = (min.min() + max.max())/2;
