@@ -45,10 +45,10 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         if (key == null) {
         	System.out.println("empty");
         }
-        // if (x == null) {
-        // 	System.out.println("in get");
-        // 	return null;
-        // }
+        if (x == null) {
+        	//System.out.println("in get");
+        	return null;
+        }
         int cmp = key.compareTo(x.key);
         if (cmp < 0) {
         	return get(x.left, key);
