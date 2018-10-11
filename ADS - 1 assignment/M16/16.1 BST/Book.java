@@ -8,15 +8,39 @@ class Book {
 		this.author = author1;
 		this.price = price1;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return value
+	 */
 	public String getname() {
 		return this.name;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return value
+	 */
 	public String getauthor() {
 		return this.author;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return value
+	 */
 	public Float getprice() {
 		return this.price;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return value
+	 */
 	public int compareTo(Book that) {
 		if(this.getname().compareTo(that.getname()) > 0) {
 			return 1;

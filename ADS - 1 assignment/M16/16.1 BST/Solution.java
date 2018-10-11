@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**BINARYTREESEARCH.**/
-class Solution {
+final class Solution {
     /**
      * @details [long description]
      */

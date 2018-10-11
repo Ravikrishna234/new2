@@ -7,13 +7,28 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
 		private Node left;
 		private Node right;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(log(N))
+	 * @param key [description]
+	 * @param value [description]
+	 */
 	public void put(Book key, Value value) {
         if (key == null)  {
        		System.out.println("null");
         }
         root = put(root, key, value);
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param root [description]
+     * @param key [description]
+     * @param value [description]
+     * @return [description]
+     */
     private Node put(Node root, Book key, Value value) {
         if (root == null) {
         	Node n = new Node();
@@ -37,10 +52,25 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         return root;
 
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param key [description]
+     * @return [description]
+     */
     public Value get(Book key) {
         return get(root, key);
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param x [description]
+     * @param key [description]
+     *
+     * @return [description]
+     */
     private Value get(Node x, Book key) {
         if (key == null) {
         	System.out.println("empty");

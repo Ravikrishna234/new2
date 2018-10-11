@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:3: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
