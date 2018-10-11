@@ -3,7 +3,7 @@ class Book {
 	String name;
 	String author;
 	Float price;
-	Book(final String n,String author1, Float price1) {
+	Book(final String n, final String author1, final Float price1) {
 		this.name = n;
 		this.author = author1;
 		this.price = price1;

@@ -1,10 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:3: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:6: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:21:74: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:24:51: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M16\16.1 BST\Solution.java:24:75: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
