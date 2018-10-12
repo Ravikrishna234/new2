@@ -37,7 +37,7 @@ public class Taxicab implements Comparable<Taxicab> {
     }
 
     public String toString() {
-        return sum + "" ;
+        return sum + " = " +i + "^3 + " + j + "^3" ;
     }
 
 }

@@ -35,6 +35,7 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:33:10: '}' at column 10 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:39:5: Class 'Taxicab' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Taxicab' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:40:24: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:40:29: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M17\TaxiCabNumbers\Taxicab.java:40:51: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 38 errors.
