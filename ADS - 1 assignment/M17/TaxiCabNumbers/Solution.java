@@ -7,34 +7,40 @@ class Solution {
 		int n = Integer.parseInt(tokens[0]);
 		int n1 = Integer.parseInt(tokens[1]);
 		//taxicab(n1);
-		for(int i = 1; i <= 1000; i++) {
+		for(int i = 1; i <= 600; i++) {
 			Taxicab tc = new Taxicab(i,i);
 			pq.insert(tc);
 		}
-		int i = 1;
 		//Taxicab old1 = new Taxicab(0,0);
 
-		long count = -1;
+		long previous = 0;
 		int cnt = 1;
 		int numcount = 0;
 		while(!pq.isEmpty()) {
 			Taxicab new1 = pq.delMin();
-				if(count == new1.getsum()) {
-					//System.out.println(new1);
+				//System.out.println(new1.getsum());
+				//System.out.println(new1);
+				 if(previous == new1.getsum()) {
+
 					//break;
 					cnt++;
 				} else {
 					cnt = 0;
+					//System.out.println(cnt + ">");
 				}
+
 				if(cnt == n1 - 1) {
 					numcount++;
+					//System.out.println(numcount + " - " + n);
 					if(numcount == n) {
 						System.out.println(new1.getsum());
+						break;
 					}
 				}
-				count = new1.getsum();
+				previous = new1.getsum();
+				//System.out.println(previous + "<");
 			//System.out.println(new1);
-			if(new1.getj() < 1000) {
+			if(new1.getj() < 600) {
 				Taxicab tac = new Taxicab(new1.geti(), new1.getj() + 1);
 				pq.insert(tac);
 			}
