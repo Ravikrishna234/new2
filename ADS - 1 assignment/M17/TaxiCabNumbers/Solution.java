@@ -7,7 +7,7 @@ class Solution {
 		int n = Integer.parseInt(tokens[0]);
 		int n1 = Integer.parseInt(tokens[1]);
 		//taxicab(n1);
-		for(int i = 1; i <= 400; i++) {
+		for(int i = 1; i <= 600; i++) {
 			Taxicab tc = new Taxicab(i,i);
 			pq.insert(tc);
 		}
@@ -32,7 +32,7 @@ class Solution {
 			// }
 			old1 = new1;
 			//System.out.println(new1);
-			if(new1.getj() < 400) {
+			if(new1.getj() < 600) {
 				Taxicab tac = new Taxicab(new1.geti(), new1.getj() + 1);
 				pq.insert(tac);
 			}

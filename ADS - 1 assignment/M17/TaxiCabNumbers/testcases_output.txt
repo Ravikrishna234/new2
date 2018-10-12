@@ -10,11 +10,11 @@ Expected Output:
 Your Output: 
 4673088
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 86488136
 Your Output: 
-
+86488136
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
