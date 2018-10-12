@@ -1,32 +1,35 @@
 /**taxicab.**/
 public class Taxicab implements Comparable<Taxicab> {
-    public final int i;
-    public final int j;
-    public final long sum;
+    /**
+     * variable.
+     */
+    private final int i;
+    /**
+     * variable.
+     */
+    private final int j;
+    /**
+     * variable.
+     */
+    private final long sum;
     Taxicab(final int i1, final int j1) {
         this.sum = (long) i1*i1*i1 + (long) j1*j1*j1;
         this.i = i1;
         this.j = j1;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
      * @return [description]
      */
     public int geti() {
         return this.i;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
      * @return [description]
      */
     public int getj() {
         return this.j;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
      * @return [description]
      */
     public long getsum() {
