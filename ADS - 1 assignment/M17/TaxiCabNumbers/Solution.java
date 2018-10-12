@@ -16,6 +16,7 @@ final class Solution {
 		int n = Integer.parseInt(tokens[0]);
 		int n1 = Integer.parseInt(tokens[1]);
 		//taxicab(n1);
+		taxicab(n,n1);
 	}
 	/**
 	 * @param n value
