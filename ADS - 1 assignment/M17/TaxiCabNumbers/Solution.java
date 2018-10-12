@@ -1,18 +1,34 @@
 import java.util.Scanner;
+/**TAXICABNUMBER.**/
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 */
+	private Solution() { }
+	/**
+	 * @param args value
+	 * Time complexity is O(N)
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
-		Minpq<Taxicab> pq = new Minpq<Taxicab>();
 		String[] tokens = s.nextLine().split(" ");
 		int n = Integer.parseInt(tokens[0]);
 		int n1 = Integer.parseInt(tokens[1]);
 		//taxicab(n1);
+	}
+	/**
+	 * @param n value
+	 * @param n1 value
+	 * Time complexity is O(log(N))
+	 */
+	public static void taxicab(final int n, final int n1) {
+		Minpq<Taxicab> pq = new Minpq<Taxicab>();
 		for(int i = 1; i <= 600; i++) {
 			Taxicab tc = new Taxicab(i,i);
 			pq.insert(tc);
 		}
 		//Taxicab old1 = new Taxicab(0,0);
-
 		long previous = 0;
 		int cnt = 1;
 		int numcount = 0;
@@ -21,7 +37,6 @@ class Solution {
 				//System.out.println(new1.getsum());
 				//System.out.println(new1);
 				 if(previous == new1.getsum()) {
-
 					//break;
 					cnt++;
 				} else {
