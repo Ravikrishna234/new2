@@ -12,6 +12,10 @@ public class Taxicab implements Comparable<Taxicab> {
      * variable.
      */
     private final long sum;
+    /**
+     * @param i1 value
+     * @param j1 value
+     */
     Taxicab(final int i1, final int j1) {
         this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
         this.i = i1;
@@ -59,7 +63,7 @@ public class Taxicab implements Comparable<Taxicab> {
      * Time complexity is O(1)
      */
     public String toString() {
-        return sum + " = " +i + "^3 + " + j + "^3" ;
+        return sum + " = " + i + "^3 + " + j + "^3";
     }
 
 }
