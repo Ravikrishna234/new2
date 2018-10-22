@@ -140,9 +140,6 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         if (key == null) {
             System.out.println(" ");
         }
-        if (isEmpty()) {
-            System.out.println("empty");
-        }
         Node x = ceiling(root, key);
         if (x == null) return null;
         else return x.key;
@@ -173,9 +170,6 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         else              return size(x.left);
     }
     public Book select(int k) {
-        if (k < 0 || k >= size()) {
-            System.out.println("empty");
-        }
         Node x = select(root, k);
         return x.key;
     }
