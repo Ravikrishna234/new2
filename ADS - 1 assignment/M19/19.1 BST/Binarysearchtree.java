@@ -100,9 +100,6 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         	return x.value;
         }
     }public Book min() {
-        if (isEmpty()) {
-            System.out.println("empty");
-        }
         Node n = min(root);
         return n.key;
     }
@@ -113,9 +110,6 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
     }
 
     public Book max() {
-        if (isEmpty()) {
-            System.out.println("Empty");
-        }
         Node c = max(root);
         return c.key;
     }
