@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M19\19.1 BST\Solution.java:22:9: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M19\19.1 BST\Solution.java:49: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
