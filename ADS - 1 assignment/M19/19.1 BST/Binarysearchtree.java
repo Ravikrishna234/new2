@@ -99,25 +99,57 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         else {
         	return x.value;
         }
-    }public Book min() {
+
+    }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1) as it is calling another function
+     * @return [description]
+     */
+    public Book min() {
         Node n = min(root);
         return n.key;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param x [description]
+     * @return [description]
+     */
     private Node min(Node x) {
         if (x.left == null) return x;
         else return min(x.left);
     }
-
+    /**
+     * @brief [brief description]
+     * Time complexity is O(1) as it is calling another function.
+     * @details [long description]
+     * @return [description]
+     */
     public Book max() {
         Node c = max(root);
         return c.key;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N)) as it is a recusive function.
+     * @param x [description]
+     * @return [description]
+     */
     private Node max(Node x) {
         if (x.right == null) return x;
         else return max(x.right);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1) as it is calling another function
+     * @param x [description]
+     * @return [description]
+     */
      public Book floor(Book key) {
         if (key == null) {
             System.out.println(" ");
@@ -126,7 +158,13 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         if (x == null) return null;
         else return x.key;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N))
+     * @param x [description]
+     * @return [description]
+     */
     private Node floor(Node x, Book key) {
         if (x == null) return null;
         int cmp = key.compareTo(x.key);
@@ -136,6 +174,9 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         if (t != null) return t;
         else return x;
     }
+    /**
+    *Time complexity is O(1) as it is calling another function.
+    **/
     public Book ceiling(Book key) {
         if (key == null) {
             System.out.println(" ");
@@ -144,7 +185,13 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         if (x == null) return null;
         else return x.key;
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N)) as it is a recursive function
+     * @param x [description]
+     * @return [description]
+     */
     private Node ceiling(Node x, Book key) {
         if (x == null) return null;
         int cmp = key.compareTo(x.key);
@@ -156,12 +203,26 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         }
         return ceiling(x.right, key);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1) as it is calling another function.
+     * @param x [description]
+     * @return [description]
+     */
      public int rank(Book key) {
         if (key == null) {
             System.out.println(" ");
         }
         return rank(key, root);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N)) as it is a recursive function.
+     * @param x [description]
+     * @return [description]
+     */
     private int rank(Book key, Node x) {
         if (x == null) return 0;
         int cmp = key.compareTo(x.key);
@@ -169,10 +230,24 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
         else              return size(x.left);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(1) as it is calling another function
+     * @param x [description]
+     * @return [description]
+     */
     public Book select(int k) {
         Node x = select(root, k);
         return x.key;
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(log(N)) as it is a recursive function.
+     * @param x [description]
+     * @return [description]
+     */
     private Node select(Node x, int k) {
         if (x == null) return null;
         int t = size(x.left);
