@@ -21,7 +21,7 @@ final class Solution {
 	/**
 	 * @param n value
 	 * @param n1 value
-	 * Time complexity is O(log(N))
+	 * Time complexity is O(N)
 	 */
 	public static void taxicab(final int n, final int n1) {
 		Minpq<Taxicab> pq = new Minpq<Taxicab>();
