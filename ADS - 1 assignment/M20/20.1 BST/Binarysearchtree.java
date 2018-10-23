@@ -255,6 +255,10 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         else if (t < k) return select(x.right, k-t-1);
         else            return x;
     }
+    /**
+     * Time complexity is O(N)
+     * @details [long description]
+     */
     public void deleteMin() {
         if (isEmpty()) {
             System.out.println("empty");
@@ -262,7 +266,11 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         root = deleteMin(root);
         }
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time complexity is O(N)
+     */
     private Node deleteMin(Node x) {
         if (x.left == null) return x.right;
         x.left = deleteMin(x.left);
@@ -271,9 +279,7 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Removes the largest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
+     * Time complexity is O(N)
      */
     public void deleteMax() {
         if (isEmpty()) {
@@ -283,7 +289,11 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
 
     }
     }
-
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Timee complxity is O(N)
+     */
     private Node deleteMax(Node x) {
         if (x.right == null) return x.left;
         x.right = deleteMax(x.right);
@@ -292,11 +302,7 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
-     *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * Time complexity is O(N)
      */
     public void delete(Book key) {
         if (key == null) {
@@ -305,7 +311,10 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         root = delete(root, key);
         }
     }
-
+    /**
+     * @brief [brief description]
+     * Time complexity is O(N)
+     */
     private Node delete(Node x, Book key) {
         if (x == null) return null;
 
