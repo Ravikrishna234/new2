@@ -13,6 +13,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
+        int c = 0;
         HashTable hashing = new HashTable();
         String[] tokens = s.nextLine().split(" ");
         for (int i = 0; i < Integer.parseInt(tokens[0]); i++) {
@@ -36,7 +37,6 @@ final class Solution {
                 a[size++] = value;
             }
         }
-         int c = 0;
         for (int i = 0; i < a.length; i++) {
             if (a[i] < 0) {
                 c = 0;
