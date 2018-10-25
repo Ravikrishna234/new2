@@ -1,5 +1,6 @@
 import java.util.Scanner;
-class Solution {
+/**HASHTABLE.**/
+final class Solution {
     private Solution() { }
     /**
      * @brief [brief description]
