@@ -9,12 +9,13 @@ class Solution {
 			hashing.put(key,i);
 		}
 		int[] a = new int[50];
-		int size = 0;
+		int size = 1;
 		for(int i = 0; i < Integer.parseInt(tokens[1]);i++) {
 			String key = s.next();
 			if(hashing.contains(key)) {
 			 	// hashing.delete(key);
 			 	int value = hashing.get(key);
+			 	//System.out.print(value + " ");
 				if(!contain(value,a,size)) {
 					a[size++] = value;
 				} else {
@@ -23,7 +24,7 @@ class Solution {
 				}
 			 }
 		}
-		//System.out.println(size);
+		// System.out.println(size);
 		if(size == Integer.parseInt(tokens[1])) {
 			System.out.println("Yes");
 		}
