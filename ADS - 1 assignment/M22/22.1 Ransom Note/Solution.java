@@ -5,8 +5,13 @@ class Solution {
 		HashTable hashing = new HashTable();
 		String[] tokens = s.nextLine().split(" ");
 		for(int i = 0; i < Integer.parseInt(tokens[0]);i++) {
+
 			String key = s.next();
-			hashing.put(key,i);
+			if(hashing.contains(key)){
+				hashing.put(key,hashing.get(key) + 1);
+			}else {
+			hashing.put(key,1);
+		}
 		}
 		long[] a = new long[Integer.parseInt(tokens[1])];
 		int size = 0;
