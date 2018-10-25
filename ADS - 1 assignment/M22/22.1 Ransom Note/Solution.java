@@ -1,6 +1,10 @@
 import java.util.Scanner;
 /**HASHTABLE.**/
 final class Solution {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     */
     private Solution() { }
     /**
      * @brief [brief description]
@@ -32,7 +36,7 @@ final class Solution {
                 a[size++] = value;
             }
         }
-        int c = 0;
+         int c = 0;
         for (int i = 0; i < a.length; i++) {
             if (a[i] < 0) {
                 c = 0;

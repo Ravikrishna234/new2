@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:17:39: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:21:39: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
