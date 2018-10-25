@@ -9,7 +9,6 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:7:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:7:64: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:9:41: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:11:35: '50' is a magic number. [MagicNumber]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:13:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:13:64: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:15:27: 'if' is not followed by whitespace. [WhitespaceAround]
@@ -21,9 +20,9 @@ Starting audit...
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:39: Parameter value should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:49: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:49: Parameter a should be final. [FinalParameters]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:57: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:57: Parameter size should be final. [FinalParameters]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:58: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:35:58: Parameter size should be final. [FinalParameters]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:36:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\M22\22.1 Ransom Note\Solution.java:37:27: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 25 errors.

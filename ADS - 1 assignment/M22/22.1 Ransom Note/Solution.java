@@ -8,7 +8,7 @@ class Solution {
 			String key = s.next();
 			hashing.put(key,i);
 		}
-		int[] a = new int[50];
+		long[] a = new long[Integer.parseInt(tokens[1])];
 		int size = 0;
 		for(int i = 0; i < Integer.parseInt(tokens[1]);i++) {
 			String key = s.next();
@@ -32,7 +32,7 @@ class Solution {
 		}
 		//hashing.display();
 	}
-	public static boolean contain(int value,int[] a,int size) {
+	public static boolean contain(int value,long[] a,int size) {
 		for(int i = 0; i < size; i++) {
 			if(a[i] == value) {
 				return true;
