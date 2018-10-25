@@ -24,9 +24,11 @@ class Solution {
 				}
 			 }
 		}
-		// System.out.println(size);
+		 // System.out.println(size);
 		if(size == Integer.parseInt(tokens[1])) {
 			System.out.println("Yes");
+		} else {
+			System.out.println("No");
 		}
 		//hashing.display();
 	}
