@@ -20,6 +20,7 @@ class Solution {
 			int value = hashing.get(key);
 			if(hashing.contains(key)) {
 				a[size++] = --value;
+				hashing.put(key,value);
 			} else {
 				a[size++] = value;
 			}
