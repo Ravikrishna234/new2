@@ -9,7 +9,7 @@ class Solution {
 			hashing.put(key,i);
 		}
 		int[] a = new int[50];
-		int size = 1;
+		int size = 0;
 		for(int i = 0; i < Integer.parseInt(tokens[1]);i++) {
 			String key = s.next();
 			if(hashing.contains(key)) {
