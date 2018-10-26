@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class LinearProbingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
@@ -22,7 +23,7 @@ class LinearProbingHashST<Key, Value> {
     public LinearProbingHashST(int capacity) {
         m = capacity;
         n = 0;
-        keys = (Key[])   new Object[m];
+        keys = (Key[]) new Object[m];
         vals = (Value[]) new Object[m];
     }
 
@@ -60,20 +61,13 @@ class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return (11 * key.hashCode()) % m;
+        return  (11 * key.hashCode()) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
     private void resize(int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
-        for (int i = 0; i < m; i++) {
-            if (keys[i] != null) {
-                temp.put(keys[i], vals[i]);
-            }
-        }
-        keys = temp.keys;
-        vals = temp.vals;
-        m    = temp.m;
+        keys = Arrays.copyOf(keys,n * 2);
+        vals = Arrays.copyOf(vals,n * 2);
     }
 
     /**
@@ -167,10 +161,15 @@ class LinearProbingHashST<Key, Value> {
     }
     public String toString() {
         String str = "{";
-        for(int i = 0;i < n - 1;i++) {
+        for(int i = 0; i < keys.length - 1;i++) {
+            if(keys[i] != null) {
             str += keys[i] + ":" + vals[i] + ", ";
         }
-        str += keys[n - 1] + ":" + vals[n - 1] + "}";
-        return str;
+    }   if(keys[keys.length - 1] != null) {
+        str += keys[keys.length - 1] + ":" + vals[keys.length - 1] + "}";
+    } else {
+        str = str.substring(0,str.length() - 2) + "}";
+    }
+    return str;
     }
 }
