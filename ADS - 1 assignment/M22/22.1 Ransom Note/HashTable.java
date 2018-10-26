@@ -11,16 +11,40 @@ private static class Node {
 		this.value = value1;
 		this.next = node;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return [description]
+	 */
 	public String getkey() {
 		return this.key;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return [description]
+	 */
 	public int getvalue() {
 		return this.value;
 	}
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return [description]
+	 */
 	public String toString() {
 		return this.key + " " + this.value;
 	}
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @return [description]
+	 */
 public void put(String key,int value) {
 	int i = hash(key);
 	for(Node x = st[i]; x!=null;x = x.next) {
@@ -31,9 +55,21 @@ public void put(String key,int value) {
 	}
 	st[i] = new Node(key,value,st[i]);
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return [description]
+	 */
 private int hash(String key) {
 	return (key.hashCode() & 0x7fffffff) % M;
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @return [description]
+	 */
 public int get(String key) {
 	int i = hash(key);
 	for(Node x = st[i];x!=null;x=x.next) {
@@ -43,15 +79,33 @@ public int get(String key) {
 	}
 	return -1;
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(1)
+	 * @return [description]
+	 */
 public boolean contains(String key) {
 	return get(key) != -1;
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @return [description]
+	 */
 public void delete(String key) {
 	int i = hash(key);
 	if(contains(key)) {
 		delete(key);
 	}
 }
+/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * Time complexity is O(N)
+	 * @return [description]
+	 */
 public void display() {
 for(int i = 0; i < st.length;i++) {
 	System.out.println(st[i]);

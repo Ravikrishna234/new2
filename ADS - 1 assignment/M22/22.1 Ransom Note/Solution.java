@@ -9,6 +9,7 @@ final class Solution {
     /**
      * @brief [brief description]
      * @details [long description]
+     * Time complexity is O(N)
      * @param args value
      */
     public static void main(final String[] args) {
@@ -29,8 +30,10 @@ final class Solution {
         for (int i = 0; i < Integer.parseInt(tokens[1]); i++) {
             String key = s.next();
             int value = hashing.get(key);
+            //System.out.println(value);
             if (hashing.contains(key)) {
                 a[size++] = --value;
+                    // System.out.println(a[size] + " " + value);
                 hashing.put(key, value);
             } else {
                 a[size++] = value;
