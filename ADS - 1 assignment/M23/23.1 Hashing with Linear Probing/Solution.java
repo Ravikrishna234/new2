@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -13,7 +13,7 @@ class Solution {
 							break;
 				case "delete":linearprob.delete(tokens[1]);
 							break;
-				case "display":System.out.println(linearprob);
+				case "display": linearprob.display();
 							break;
 				default:
 						break;

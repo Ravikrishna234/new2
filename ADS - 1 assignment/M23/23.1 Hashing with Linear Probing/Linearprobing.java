@@ -1,4 +1,3 @@
-import java.util.Arrays;
 class LinearProbingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
@@ -23,7 +22,7 @@ class LinearProbingHashST<Key, Value> {
     public LinearProbingHashST(int capacity) {
         m = capacity;
         n = 0;
-        keys = (Key[]) new Object[m];
+        keys = (Key[])   new Object[m];
         vals = (Value[]) new Object[m];
     }
 
@@ -61,13 +60,20 @@ class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return  (11 * key.hashCode()) % m;
+        return (key.hashCode() * 11) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
     private void resize(int capacity) {
-        keys = Arrays.copyOf(keys,n * 2);
-        vals = Arrays.copyOf(vals,n * 2);
+        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
+        for (int i = 0; i < m; i++) {
+            if (keys[i] != null) {
+                temp.put(keys[i], vals[i]);
+            }
+        }
+        keys = temp.keys;
+        vals = temp.vals;
+        m    = temp.m;
     }
 
     /**
@@ -100,7 +106,6 @@ class LinearProbingHashST<Key, Value> {
         }
         keys[i] = key;
         vals[i] = val;
-        // System.out.println(keys[i] + ":" + vals[i]);
         n++;
     }
 
@@ -158,18 +163,43 @@ class LinearProbingHashST<Key, Value> {
         // halves size of array if it's 12.5% full or less
         if (n > 0 && n <= m/8) resize(m/2);
 
+        assert check();
     }
-    public String toString() {
-        String str = "{";
-        for(int i = 0; i < keys.length - 1;i++) {
-            if(keys[i] != null) {
-            str += keys[i] + ":" + vals[i] + ", ";
+
+
+    // integrity check - don't check after each put() because
+    // integrity not maintained during a delete()
+    private boolean check() {
+
+        // check that hash table is at most 50% full
+        if (m < 2*n) {
+            System.err.println("Hash table size m = " + m + "; array size n = " + n);
+            return false;
         }
-    }   if(keys[keys.length - 1] != null) {
-        str += keys[keys.length - 1] + ":" + vals[keys.length - 1] + "}";
-    } else {
-        str = str.substring(0,str.length() - 2) + "}";
+
+        // check that each key in table can be found by get()
+        for (int i = 0; i < m; i++) {
+            if (keys[i] == null) continue;
+            else if (get(keys[i]) != vals[i]) {
+                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+                return false;
+            }
+        }
+        return true;
     }
-    return str;
+    public void display() {
+        if(size() == 0) {
+            System.out.println("{}");
+            return;
+        }
+        String str = "{";
+        for(int i=0; i<m;i++) {
+            if(keys[i] != null) {
+                str += keys[i] + ":" + vals[i] + ", ";
+            }
+        }
+        str = str.substring(0, str.length()-2);
+        str += "}";
+        System.out.println(str);
     }
 }
