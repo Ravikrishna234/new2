@@ -19,7 +19,8 @@ final class Solution {
         for (int i = 0; i < n; i++) {
             String[] tokens = s.nextLine().split(" ");
             switch (tokens[0]) {
-                case "put": linearprob.put(tokens[1], Integer.parseInt(tokens[2]));
+                case "put": linearprob.put(tokens[1],
+                    Integer.parseInt(tokens[2]));
                             break;
                 case "get": System.out.println(linearprob.get(tokens[1]));
                             break;
