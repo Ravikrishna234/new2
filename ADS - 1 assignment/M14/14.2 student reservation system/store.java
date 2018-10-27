@@ -17,7 +17,7 @@ class store {
 	/**
 	 * @brief [brief description]
 	 * @details [long description]
-	 * time complexity is O(N^2).
+	 * time complexity is O(N(log(N))).
 	 */
 	public void sort() {
         int n = size;
