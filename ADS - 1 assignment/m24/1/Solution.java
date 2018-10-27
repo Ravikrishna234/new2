@@ -19,14 +19,15 @@ class Solution {
 	 //System.out.println(tokens1[0]);
 	 if(tokens1[0].equals("get")) {
 	 	//System.out.println("haiii");
-	 	if(Integer.parseInt(tokens1[2]) == 1) {
+	 	if(tokens1[2].equals("1")) {
 	 		String a = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
-	 		System.out.println(a);
-	 		//String[] b = a.split(",");
-	 		//System.out.println(b[0]);
+	 		//System.out.println(a);
+	 		String[] b = a.split("==");
+	 		System.out.println(b[0]);
 	 } else {
 	 	String c = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
-	 	String[] d = c.split(",");
+	 	//System.out.println(c);
+	 	String[] d = c.split("==");
 	 	System.out.println(d[1]);
 	 }
 

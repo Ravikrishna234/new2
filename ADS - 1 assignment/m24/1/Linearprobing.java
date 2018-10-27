@@ -148,7 +148,7 @@ class LinearProbingHashST<Key, Value> {
                 return str[0];
             }
         else {
-            return str[1];
+            return str[0];
         }
         //return null;
     }
