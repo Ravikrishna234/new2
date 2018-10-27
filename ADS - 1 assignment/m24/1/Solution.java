@@ -24,11 +24,13 @@ class Solution {
 	 		//System.out.println(a);
 	 		String[] b = a.split("==");
 	 		System.out.println(b[0]);
-	 } else {
+	 } else if(tokens1[2].equals("2")) {
 	 	String c = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
 	 	//System.out.println(c);
 	 	String[] d = c.split("==");
 	 	System.out.println(d[1]);
+	 } else {
+	 	return;
 	 }
 
 
