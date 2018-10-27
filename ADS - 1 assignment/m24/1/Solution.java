@@ -45,7 +45,6 @@ final class Solution {
 	 	//System.out.println(c);
 	 	if(c.equals("Student doesn't exists...")) {
 	 		System.out.println(c);
-	 		return;
 	 	} else {
 	 	String[] d = c.split("==");
 	 	System.out.println(d[1]);
