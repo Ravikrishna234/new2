@@ -17,7 +17,7 @@ class Student{
 		return this.marks;
 	}
 	public String toString() {
-		return this.getname() + " " + this.getmarks1();
+		return this.getname() + "," + this.getmarks1();
 	}
 
 }
