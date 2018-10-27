@@ -141,7 +141,8 @@ class LinearProbingHashST<Key, Value> {
         String[] str = s.split(",");
         //System.out.println(Arrays.toString(str));
         if(v == null) {
-            System.out.println("student doesn't exists...");
+            String stc= "student doesn't exists...";
+            return stc;
         } else if(value == 1) {
             //if(str.length == 1) {
                 return str[0];
@@ -149,7 +150,6 @@ class LinearProbingHashST<Key, Value> {
         else {
             return str[0];
         }
-        return null;
     }
     public Value get(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");

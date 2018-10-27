@@ -81,8 +81,7 @@ John
 Hank
 13.3
 Jeannette Caines
-student doesn't exists...
-Exception in thread "main" java.lang.NullPointerException
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:30)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -920,6 +919,46 @@ David Macfarlane
 10.42
 88.39
 student doesn't exists...
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+8.759
+40.1
+35.74
+51.43
+48.77
+Ann-Marie MacDonald
+87.6
+Ellie Macdonald
+Michael Hague
+11.58
+Ruby Jackson
+David Haig
+28.69
+53.48
+90.91
+Jennifer Haigh
+43.06
+92.0
+92.0
+Kevin MacAllister
+57.53
+Katharina Hagena
+50.88
+15.89
+Margaret Read MacDonald
+Carla Jablonski
+61.6
+Kate Jacoby
+Sylvie Haisman
+Tony Macaulay
+Saskia Maarleveld
+Kellie Hailes
+Steve Hagen
+H. JACKSON
+John Hale
+Korey Jackson
+3.336
+Betty Halbreich
+35.6
+Dana C. Jack
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:30)
 ----------------------------------------
