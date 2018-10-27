@@ -96,7 +96,7 @@ class store {
 			return s;
 	}
 	/**
-	 * time complexity is O(1).
+	 * time complexity is O(N).
 	 * @param vacancy value
 	 * @return value
 	 */
@@ -112,7 +112,7 @@ class store {
 			return s;
 	}
 	/**
-	 * time complexity is O(1).
+	 * time complexity is O(N).
 	 * @param open [description]
 	 * @param n value
 	 * @param bc value
