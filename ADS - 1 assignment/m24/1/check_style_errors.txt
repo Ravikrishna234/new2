@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\m24\1\Student.java:3: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\m24\1\Student.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\RavikRishna\Downloads\new2\ADS - 1 assignment\m24\1\Student.java:11: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
