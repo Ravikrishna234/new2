@@ -236,6 +236,12 @@ public class Minpq<stock> implements Iterable<stock> {
         if (right <= n && greater(k, right)) return false;
         return isMinHeap(left) && isMinHeap(right);
     }
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * Time Complexity is O(N)
+     * @return [description]
+     */
     public String toString() {
         String s = "";
         for(int i = 0; i < n - 1;i++) {
