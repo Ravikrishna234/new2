@@ -142,8 +142,7 @@ class LinearProbingHashST<Key, Value> {
         //System.out.println(Arrays.toString(str));
         if(value == null) {
             String stc= "Student doesn't exists...";
-            System.out.println(stc);
-            return null;
+            return stc;
         } else if(value1 == 1) {
             //if(str.length == 1) {
                 return str[0];
