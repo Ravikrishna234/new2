@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Scanner;
+
 class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -21,8 +22,9 @@ class Solution {
 	 	//System.out.println("haiii");
 	 	if(tokens1[2].equals("1")) {
 	 		String a = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
-	 		if(a.equals("Student doesn't exists...")) {
-	 			System.out.println(a);
+	 		//if(a.equals("Student doesn't exists..."))
+	 		if(a == null){
+	 			//System.out.println(a);
 	 			return;
 	 		} else {
 	 		String[] b = a.split("==");
@@ -31,8 +33,10 @@ class Solution {
 	 } else if(tokens1[2].equals("2")) {
 	 	String c = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
 	 	//System.out.println(c);
-	 	if(c.equals("Student doesn't exists...")) {
-	 		System.out.println(c);
+	 	//if(c.equals("Student doesn't exists..."))
+	 	if(c==null) {
+	 		//System.out.println(c);
+	 		return;
 	 	} else {
 	 	String[] d = c.split("==");
 	 	System.out.println(d[1]);

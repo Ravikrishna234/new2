@@ -132,18 +132,19 @@ class LinearProbingHashST<Key, Value> {
      * Time complexity in worst case O(log(N))
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public String get(Key key,int value) {
-        Value v = get(key);
-        String s = "";
-        s+= v;
+    public String get(Key key,int value1) {
+        Value value = get(key);
+        String string = "";
+        string+= value;
         //System.out.println(s);
         //System.out.println("i am in");
-        String[] str = s.split(",");
+        String[] str = string.split(",");
         //System.out.println(Arrays.toString(str));
-        if(v == null) {
+        if(value == null) {
             String stc= "Student doesn't exists...";
-            return stc;
-        } else if(value == 1) {
+            System.out.println(stc);
+            return null;
+        } else if(value1 == 1) {
             //if(str.length == 1) {
                 return str[0];
             }
