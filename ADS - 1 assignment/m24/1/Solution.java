@@ -21,13 +21,22 @@ class Solution {
 	 	//System.out.println("haiii");
 	 	if(tokens1[2].equals("1")) {
 	 		String a = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
+	 		if(a.equals("Student doesn't exists...")) {
+	 			System.out.println(a);
+	 			return;
+	 		} else {
 	 		String[] b = a.split("==");
 	 		System.out.println(b[0]);
+	 	}
 	 } else if(tokens1[2].equals("2")) {
 	 	String c = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
 	 	//System.out.println(c);
+	 	if(c.equals("Student doesn't exists...")) {
+	 		System.out.println(c);
+	 	} else {
 	 	String[] d = c.split("==");
 	 	System.out.println(d[1]);
+	 }
 	 } else {
 	 	return;
 	 }
