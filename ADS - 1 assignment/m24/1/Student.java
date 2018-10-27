@@ -8,7 +8,7 @@ final class Student {
      * variable.
      */
     private String name;
-    /**.`
+    /**.
      * variable.;
      */
     private Double marks;
