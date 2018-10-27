@@ -1,15 +1,15 @@
 /**studenttable.**/
 final class Student {
     /**
-     * variable;
+     * variable.;
      */
     private int rollno;
     /**
-     * variable;
+     * variable.;
      */
     private String name;
     /**
-     * variable;
+     * variable.;
      */
     private Double marks;
     /**
