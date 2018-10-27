@@ -21,8 +21,9 @@ class Solution {
 	 	//System.out.println("haiii");
 	 	if(Integer.parseInt(tokens1[2]) == 1) {
 	 		String a = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
-	 		String[] b = a.split(",");
-	 		System.out.println(b[0]);
+	 		System.out.println(a);
+	 		//String[] b = a.split(",");
+	 		//System.out.println(b[0]);
 	 } else {
 	 	String c = hashing.get((tokens1[1]),Integer.parseInt(tokens1[2]));
 	 	String[] d = c.split(",");
